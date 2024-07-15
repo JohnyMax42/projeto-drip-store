@@ -1,0 +1,78 @@
+.container{
+    width: 1440px;
+    height: 192px;
+    margin: 0px;
+}
+#cabecalho{
+    display: flex;
+    /* align-items: center; */
+    width: 1440px;
+    margin: 0px;
+}
+#logo{
+    width: 253px;
+    height: 44px;
+    margin-top: 42px;
+    margin-left: 104px;
+}
+#barraPesquisa{
+    width: 499px;
+    height: 60px;
+    margin-top: 34px;
+    margin-left: 27px;
+    border: 0px;
+    border-radius: 8px 0px 0px 8px;
+    background-color: rgba(71, 71, 71, 0.04);
+}
+#botaoLupa{
+    background-image: url(assets/Search.png);
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-color: rgba(71, 71, 71, 0.04);
+    border: 0px;
+    border-radius: 0px 8px 8px 0px;
+    width: 60px;
+    height: 60px;
+    margin-top: 34px;
+    margin-left: 0px;
+}
+#cadastro{
+    width: 102px;
+    height: 28px;
+    margin-top: 50px;
+    margin-left: 48px;
+}
+#botaoEntrar{
+    width: 114px;
+    height: 40px;
+    margin-top: 44px;
+    margin-left: 30px;
+    color: rgba(245, 245, 245, 1);
+    background-color: rgba(201, 32, 113, 1);
+    border: 0px;
+    border-radius: 8px;
+}
+#iconeCarrinho{
+    background-image: url(assets/Buy.png);
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 29px;
+    margin-top: 47px;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+.links{
+    color: rgba(71, 71, 71, 1);
+}
+#linksHeader{
+    width: 423px;
+    height: 29px;
+    margin-top: 48px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+}
