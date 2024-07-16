@@ -4,7 +4,7 @@ import logo from '../assets/logo.png'
 export default function Header(){
     
     return(
-         <header className="container">
+         <header className="caixaHeader">
             <div id='cabecalho'>
                 <img id="logo" src={logo} alt="logo"/>
                 <input id="barraPesquisa" type="text" placeholder="Pesquisar produto..."/>
