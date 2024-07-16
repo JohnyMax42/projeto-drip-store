@@ -1,0 +1,23 @@
+.Banner {
+    width: 1440px;
+    height: 681px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+
+.Banner-container {
+    width: 1303px;
+    height: 398px;
+}
+
+.texto {
+    width: 510px;
+    height: 132px;
+}
+
+.imagem {
+    width: 733.51px;
+    height: 431.61px;
+}

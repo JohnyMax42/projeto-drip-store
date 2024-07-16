@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
-
+import Banner from './components/Banner'
 
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
   return (
     <>
 
-    <Header></Header>
-    
+      <Header></Header>
+      <Banner></Banner>
       {/* <div>
       <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
