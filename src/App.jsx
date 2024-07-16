@@ -5,6 +5,7 @@ import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Banner from './components/Banner'
+import Banner2 from './components/Banner2'
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
       <layout>
         <Header></Header>
         <Banner></Banner>
+        <Banner2></Banner2>
+
         {/* Codigo padrão do vite
       <div>
       <a href="https://vitejs.dev" target="_blank">

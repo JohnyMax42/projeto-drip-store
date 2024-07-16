@@ -1,0 +1,51 @@
+.Banner2 {
+    width: 1440px;
+    height: 681px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+
+.Banner-container {
+    width: 1303px;
+    height: 398px;
+    position: relative;
+    display: flex;
+    /* Adiciona flexbox */
+    align-items: center;
+    /* Alinha verticalmente */
+}
+
+.texto {
+    width: 510px;
+    height: auto;
+    /* Remover altura fixa para melhor responsividade */
+    margin-left: 40px;
+    /* Adiciona espaço entre a imagem e o texto */
+    text-align: left;
+}
+
+.texto p {
+    color: #C92071;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.texto h1 {
+    color: #474747;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.texto span {
+    color: #474747;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.imagem {
+    width: 573px;
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
