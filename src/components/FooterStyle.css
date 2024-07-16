@@ -1,12 +1,56 @@
-.container{
+.caixaFooter{
     width: 1440px;
     height: 454px;
     margin: 0px;
     color: rgba(255, 255, 255, 1);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     background-color: rgba(31, 31, 31, 1);
+}
+.caixaFooterDois{
+    width: 1440px;
+    height: 383px;
+    margin: 0px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    background-color: rgba(31, 31, 31, 1);
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-evenly;
+}
+#logo2{
+    width: 253px;
+    height: 44px;
+    margin-top: 35px;
+    margin-left: 100px;
+}
+#textoFooter{
+    width: 307px;
+    height: 78px;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+#redesSociais{
+    width: 124px;
+    height: 20px;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.sessoes{
+    max-width: 233px;
+    max-height: 78px;
+    line-height: normal;
+}
+.tituloSessoes{
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 72px;
+    margin-bottom: 28px;
 }
 hr{
     border-color: rgba(255, 255, 255, 0.3);
+    margin-top: 0px;
+    margin-left: 100px;
 }
