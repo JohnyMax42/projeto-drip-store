@@ -12,10 +12,11 @@ function App() {
 
   return (
     <>
-
-      <Header></Header>
-      <Banner></Banner>
-      {/* <div>
+      <layout>
+        <Header></Header>
+        <Banner></Banner>
+        {/* Codigo padrão do vite
+      <div>
       <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -36,8 +37,8 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
 
-      <Footer></Footer>
-
+        <Footer></Footer>
+      </layout>
     </>
   )
 }
