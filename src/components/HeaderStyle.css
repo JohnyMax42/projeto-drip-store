@@ -25,7 +25,7 @@
     background-color: rgba(71, 71, 71, 0.04);
 }
 #botaoLupa{
-    background-image: url(assets/Search.png);
+    background-image: url(../assets/Search.png);
     background-position: center;
     background-size: 24px;
     background-repeat: no-repeat;
@@ -54,7 +54,7 @@
     border-radius: 8px;
 }
 #iconeCarrinho{
-    background-image: url(assets/Buy.png);
+    background-image: url(../assets/Buy.png);
     background-position-x: left;
     background-position-y: bottom;
     background-size: 24px;
