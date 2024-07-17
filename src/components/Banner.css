@@ -64,8 +64,6 @@
     line-height: 66px;
     letter-spacing: 0.9999998807907104px;
     text-align: left;
-
-
 }
 
 .textoSecundario {
@@ -82,9 +80,6 @@
     letter-spacing: 0.75px;
     text-align: left;
     color: #474747;
-
-
-
 }
 
 .butomOfertas {
@@ -96,5 +91,4 @@
     background-color: var(--cor-primaria);
     border: 0px;
     border-radius: 8px;
-
 }
