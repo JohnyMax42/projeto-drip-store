@@ -8,8 +8,10 @@ export default function Banner2() {
         <>
             <div className="Banner2">
                 <div className="Banner-container2">
-                    <img className="imagem21" src={Shoes2} alt="shoes" />
-                    <img className="imagem22" src={Ellipsis} alt="Ellipse11" />
+                    <div className="imagens">
+                        <img className="imagem21" src={Shoes2} alt="shoes" />
+                        <img className="imagem22" src={Ellipsis} alt="Ellipse11" />
+                    </div>
                     <div className="texto">
                         <p className="p">Oferta especial</p>
                         <h1>Air Jordan edição de colecionador</h1>
