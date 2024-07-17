@@ -13,12 +13,22 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Colors */
+  /* Colors */
   --cor-primary: #C92071;
   --cor-secondary: #B5B6F2;
   --cor-tertiary: #991956;
   --cor-error: #EE4266;
   --cor-success: #52CA76;
   --cor-warning: #F6AA1C;
+
+  /* Grayscale */
+  --dark-gray: #1F1F1F;
+  --dark-gray-2: #474747;
+  --dark-gray-3: #666666;
+  --light-gray: #8F8F8F;
+  --light-gray-2: #CCCCCC;
+  --light-gray-3: #F5F5F5;
+  --white: #FFFFFF;
 }
 
 a {
