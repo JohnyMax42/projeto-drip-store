@@ -57,6 +57,12 @@
     height: 28px;
     margin-top: 50px;
     margin-left: 48px;
+    text-decoration: underline;
+}
+
+#cadastro:hover {
+    color: rgba(71, 71, 71, 1);
+
 }
 
 #botaoEntrar {
@@ -68,6 +74,10 @@
     background-color: var(--cor-primaria);
     border: 0px;
     border-radius: 8px;
+}
+
+#botaoEntrar:hover {
+    background-color: rgba(126, 0, 61, 0.815);
 }
 
 #iconeCarrinho {

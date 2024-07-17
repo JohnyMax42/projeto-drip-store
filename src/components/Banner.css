@@ -39,7 +39,7 @@
 
 
 .melhoresOfertas {
-    width: 280px;
+    width: auto;
     height: 24px;
     top: 318px;
     left: 100px;
@@ -88,7 +88,7 @@
 }
 
 .butomOfertas {
-
+    font-weight: 700;
     width: 220px;
     height: 48px;
     margin-top: 44px;
