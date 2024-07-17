@@ -26,10 +26,13 @@
     text-align: left;
 }
 
-.texto p {
-    color: #C92071;
+.texto {
     font-weight: 700;
     font-size: 14px;
+}
+
+.p {
+    color: #F6AA1C;
 }
 
 .texto h1 {
