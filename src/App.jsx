@@ -10,10 +10,12 @@ function App() {
 
   return (
     <>
-      <Layout pagina={<Banner />}></Layout>
-      <Layout pagina={<Banner2 />}></Layout>
-      <Layout pagina={<div><Banner /><Banner2 /></div>} />
-      <Layout pagina={<ProductListingPage />}></Layout>
+      <Layout pagina={
+        <div>
+          <Banner />
+          <Banner2 />
+          <ProductListingPage />
+        </div>} />
     </>
   )
 }
