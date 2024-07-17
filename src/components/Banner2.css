@@ -14,8 +14,10 @@
     position: relative;
     display: flex;
     /* Adiciona flexbox */
-    align-items: center;
+    align-items: flex-start;
+    background-position: 272px;
     /* Alinha verticalmente */
+  
 }
 
 .texto {
@@ -49,14 +51,14 @@
     font-size: 16px;
 }
 
-.imagem21 {
+/* .imagem21 {
     width: 573px;
     height: 330px;
     /* Mantém a proporção da imagem */
-    position: absolute;
-}
+    
+} */
 
-.imagem22 {
+/* .imagem22 {
     width: 466px;
     height: 466px;
     top: 2824px;
@@ -64,4 +66,4 @@
     gap: 0px;
     opacity: 0px;
     background: linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%);
-}
+} */

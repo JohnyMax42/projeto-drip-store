@@ -1,8 +1,6 @@
 import React from "react"
 import './Banner2.css'
-import Shoes2 from '../assets/shoes2.png'
-import Ellipsis from "../assets/Ellipse11.png"
-
+import Shoes2 from '../assets/Frame 53660.png'
 export default function Banner2() {
     return (
         <>
@@ -10,7 +8,7 @@ export default function Banner2() {
                 <div className="Banner-container2">
                     <div className="imagens">
                         <img className="imagem21" src={Shoes2} alt="shoes" />
-                        <img className="imagem22" src={Ellipsis} alt="Ellipse11" />
+                        {/* <img className="imagem22" src={Ellipsis} alt="Ellipse11" /> */}
                     </div>
                     <div className="texto">
                         <p className="p">Oferta especial</p>
