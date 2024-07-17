@@ -6,17 +6,21 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Banner from './components/Banner'
 import Banner2 from './components/Banner2'
-
+import Layout from './pages/Layout'
+import ProductListingPage from './pages/ProductListingPage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <layout>
-        <Header></Header>
+     
+        {/* <Header></Header>
         <Banner></Banner>
         <Banner2></Banner2>
+        <Footer></Footer> */}
+
+      <Layout pagina={<Banner/>}></Layout>
 
         {/* Codigo padrão do vite
       <div>
@@ -40,8 +44,10 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
 
-        <Footer></Footer>
-      </layout>
+
+
+        
+      
     </>
   )
 }
