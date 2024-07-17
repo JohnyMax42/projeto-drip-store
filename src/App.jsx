@@ -21,6 +21,7 @@ function App() {
         <Footer></Footer> */}
 
       <Layout pagina={<Banner/>}></Layout>
+      <Layout pagina={<ProductListingPage/>}></Layout>
 
         {/* Codigo padrão do vite
       <div>

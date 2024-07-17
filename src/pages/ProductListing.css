@@ -1,0 +1,26 @@
+#botaoSelecao{
+    width: 332px;
+    height: 60px;
+    border: 1px;
+    border-radius: 4px;
+    background-color: rgba(249, 248, 254, 1);
+}
+select{
+    border: 0px;
+    background-color: rgba(249, 248, 254, 1);
+}
+form{
+    width: 308px;
+    height: 720px;
+    border: 1px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+}
+hr{
+    border-color: rgba(204, 204, 204, 1);
+}
+.filtro{
+    font-weight: bold;
+}
