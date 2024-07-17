@@ -24,32 +24,31 @@
     height: 352px;
 }
 
-.imagem1{
-        width: 733.51px;
-        height: 431.61px;
-        top: 446.91px;
-        left: 513.25px;
-        gap: 0px;
-        opacity: 0px;
-        transform: rotate(-19.34deg);
-        object-fit: cover;
-
+.imagem1 {
+    width: 733.51px;
+    height: 431.61px;
+    top: 446.91px;
+    left: 513.25px;
+    gap: 0px;
+    opacity: 0px;
+    transform: rotate(-19.34deg);
+    object-fit: cover;
 
 }
 
 
 
 .melhoresOfertas {
-width: 280px;
-  height: 24px;
-  top: 318px;
-  left: 100px;
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.75px;
-  color: rgba(246, 170, 28, 1); 
+    width: 280px;
+    height: 24px;
+    top: 318px;
+    left: 100px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: rgba(246, 170, 28, 1);
 }
 
 .textoPrincipal {

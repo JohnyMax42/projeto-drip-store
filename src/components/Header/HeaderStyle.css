@@ -8,7 +8,7 @@
     font-family: 'Inter'
 }
 
-.caixaHeader{
+.caixaHeader {
     width: 1440px;
     height: 192px;
     margin: 0px;
@@ -39,7 +39,7 @@
 }
 
 #botaoLupa {
-    background-image: url(../assets/Search.png);
+    background-image: url(../../assets/Search.png);
     background-position: center;
     background-size: 24px;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@
 }
 
 #iconeCarrinho {
-    background-image: url(../assets/Buy.png);
+    background-image: url(../../assets/Buy.png);
     background-position-x: left;
     background-position-y: bottom;
     background-size: 24px;
