@@ -3,15 +3,15 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import Banner from '../components/Banner';
 
-const Layout = ({pagina})=>{
-    return(
-    <div>
-        <Header />
+const Layout = ({ pagina }) => {
+    return (
+        <div>
+            <Header />
 
-        {pagina}
+            {pagina}
 
-        <Footer />
-    </div>
+            <Footer />
+        </div>
     );
 };
 

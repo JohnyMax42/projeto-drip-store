@@ -16,7 +16,7 @@
     align-items: flex-start;
     background-position: 272px;
     /* Alinha verticalmente */
-  
+
 }
 
 .texto {
@@ -34,7 +34,7 @@
         transform: rotate(-19.34deg);
         object-fit: cover;
 
-    
+
 }
 
 
@@ -60,35 +60,36 @@ width: 280px;
     gap: 0px;
     opacity: 0px;
     font-family: Inter;
-font-size: 64px;
-font-weight: 800;
-line-height: 66px;
-letter-spacing: 0.9999998807907104px;
-text-align: left;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 66px;
+    letter-spacing: 0.9999998807907104px;
+    text-align: left;
 
-    
+
 }
 
-.textoSecundario{
+.textoSecundario {
     width: 495px;
-height: 68px;
-top: 514px;
-left: 100px;
-gap: 0px;
-opacity: 0px;
-font-family: Inter;
-font-size: 18px;
-font-weight: 400;
-line-height: 34px;
-letter-spacing: 0.75px;
-text-align: left;
-color: #474747;
+    height: 68px;
+    top: 514px;
+    left: 100px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    text-align: left;
+    color: #474747;
 
 
 
 }
+
 .butomOfertas {
-    
+
     width: 220px;
     height: 48px;
     margin-top: 44px;
@@ -98,8 +99,3 @@ color: #474747;
     border-radius: 8px;
 
 }
-
-
-
-
-

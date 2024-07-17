@@ -3,7 +3,7 @@ import './Banner.css'
 import Shoes from '../assets/Frame 53659.png'
 export default function Banner() {
     return (
-        
+
         <div className="Banner">
             <div className="Banner-container1">
                 <div className="texto">
@@ -11,7 +11,7 @@ export default function Banner() {
                     <p className="textoPrincipal">Queima de stoque Nike🔥</p>
                     <span className="textoSecundario">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</span>
                     <br />
-                        <input className="butomOfertas" id="" type="button" value="Ver Ofertas" /> 
+                    <input className="butomOfertas" id="" type="button" value="Ver Ofertas" />
                 </div>
                  <div>
                 <img className="imagem1" src={Shoes} alt="shoes" />
@@ -19,6 +19,6 @@ export default function Banner() {
                 </div>
             </div>
         </div>
-        
+
     )
 }
