@@ -5,6 +5,7 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #F5F5F5;
+    top: 194px;
 }
 
 .Banner-container {
@@ -17,9 +18,26 @@
     height: 132px;
 }
 
-.imagem {
+.imagem1{
     width: 733.51px;
     height: 431.61px;
+    top: 446.91px;
+    left: 513.25px;
+    gap: 0px;
+    opacity: 0px;
+    transform: rotate(-19.34deg);
+    object-fit: cover;
+
+    
+}
+.imagem2{
+    display: flex;
+    width: 140px;
+    height: 140px;
+    opacity: 0.4px;
+    color: rgba(246, 170, 28, 1);
+
+
 }
 
 
@@ -74,5 +92,21 @@ text-align: left;
 color: #474747;
 
 
+
 }
+.butomOfertas {
+    
+    width: 220px;
+    height: 48px;
+    margin-top: 44px;
+    color: rgba(245, 245, 245, 1);
+    background-color: var(--cor-primaria);
+    border: 0px;
+    border-radius: 8px;
+
+}
+
+
+
+
 
