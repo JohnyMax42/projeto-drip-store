@@ -6,7 +6,7 @@ export default function Banner() {
     return (
         <>
             <div className="Banner">
-                <div className="Banner-container">
+                <div className="Banner-container1">
                     <div className="texto">
                         <p className="melhoresOfertas">Melhores ofertas personalizadas</p>
                         <h1 className="textoPrincipal">Queima de stoque Nike 🔥</h1>

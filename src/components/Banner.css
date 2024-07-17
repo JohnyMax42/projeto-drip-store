@@ -8,9 +8,16 @@
     top: 194px;
 }
 
-.Banner-container {
+.Banner-container1 {
     width: 1303px;
     height: 398px;
+    position: relative;
+    display: flex;
+    /* Adiciona flexbox */
+    align-items: flex-start;
+    background-position: 272px;
+    /* Alinha verticalmente */
+  
 }
 
 .texto {
@@ -36,6 +43,9 @@
     height: 140px;
     opacity: 0.4px;
     color: rgba(246, 170, 28, 1);
+   
+   
+    
 
 
 }

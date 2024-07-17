@@ -4,10 +4,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #F5F5F5;
+    background: #FFFFFF;
+
 }
 
-.Banner-container {
+.Banner-container2 {
     width: 1303px;
     height: 398px;
     position: relative;
@@ -24,6 +25,7 @@
     margin-left: 40px;
     /* Adiciona espaço entre a imagem e o texto */
     text-align: left;
+    
 }
 
 .texto {
@@ -47,8 +49,22 @@
     font-size: 16px;
 }
 
-.imagem {
+.imagem21 {
     width: 573px;
-    height: auto;
+    height: 330px;
     /* Mantém a proporção da imagem */
-} /*ddddddd
+    position: absolute;
+} 
+
+.imagem22{
+    width: 466px;
+height: 466px;
+top: 2824px;
+left: 129px;
+gap: 0px;
+opacity: 0px;
+background: linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%)
+
+
+
+}
