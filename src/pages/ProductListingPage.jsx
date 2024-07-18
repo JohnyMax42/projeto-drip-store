@@ -3,21 +3,33 @@ import './ProductListing.css'
 export default function ProductListingPage(){
     
     return(
-        <div>
-            <p><strong>Resultados para "Tênis" -</strong> 389 produtos</p>
-            <div>
-                <button id='botaoSelecao'>
-                <label htmlFor="selecaoPrecos">Ordenar por:</label>
-                <select name="selecao" id="selecaoPrecos">
-                    <option value="1"> menor preço</option>
-                    <option value="2"> maior preço</option>
-                </select>
-                </button>
+        <div id='productListing'>
+
+            <div className='bloco'>
+
+                <p><strong>Resultados para "Tênis" -</strong> 389 produtos</p>
+
+                
+                <div id='botaoOrdem'>
+                    <label htmlFor="selecaoPrecos">Ordenar por:</label>
+                    <select name="selecao" id="selecaoPrecos">
+                        <option value="1"><span>menor preço</span></option>
+                        <option value="2">maior preço</option>
+                    </select>
+                </div>
+
             </div>
-            <form action="#">
-            <p className='filtro'>Filtrar por</p>
-            <hr width="258px" size="1px"/>
+
+            <div className='bloco'>
+            
+                <form action="#">
+
                 <div>
+                    <p className='filtro'>Filtrar por</p>
+                    <hr />
+                </div>
+            
+                <div className='caixasFiltro'>
                     <label htmlFor="" className='filtro'>Marca</label><br />
                     <input type="checkbox" name="marca" id="marcaAdiddas" />
                     <label htmlFor="marcaAdiddas">Adiddas</label><br />
@@ -30,7 +42,7 @@ export default function ProductListingPage(){
                     <input type="checkbox" name="marca" id="marcaPuma" />
                     <label htmlFor="marcaPuma">Puma</label><br />
                 </div>
-                <div>
+                <div className='caixasFiltro'>
                     <label htmlFor="" className='filtro'>Categoria</label><br />
                     <input type="checkbox" name="categoria" id="categoriaEsporte" />
                     <label htmlFor="categoriaEsporte">Esporte e lazer</label><br />
@@ -41,7 +53,7 @@ export default function ProductListingPage(){
                     <input type="checkbox" name="categoria" id="categoriaCorrida" />
                     <label htmlFor="categoriaCorrida">Corrida</label><br />
                 </div>
-                <div>
+                <div className='caixasFiltro'>
                     <label htmlFor="" className='filtro'>Gênero</label><br />
                     <input type="checkbox" name="genero" id="generoMasculino" />
                     <label htmlFor="generoMasculino">Masculino</label><br />
@@ -50,14 +62,22 @@ export default function ProductListingPage(){
                     <input type="checkbox" name="genero" id="generoUnisex" />
                     <label htmlFor="generoUnisex">Unisex</label><br />
                 </div>
-                <div>
+                <div className='caixasFiltro'>
                 <label htmlFor="" className='filtro'>Estado</label><br />
                     <input type="radio" name="estado" id="estadoNovo" />
                     <label htmlFor="estadoNovo">Novo</label><br />
                     <input type="radio" name="estado" id="estadoUsado" />
                     <label htmlFor="estadoUsado">Usado</label>
                 </div>
-            </form>
+
+                </form>
+
+                <div>
+                    <h1>LISTA DE CARDS</h1>
+                </div>
+
+            </div>
+            
         </div>
 
     )
