@@ -13,3 +13,5 @@ const cores = {
     lightGray3: '#F5F5F5',
     white: '#FFFFFF'
 };
+
+export default cores
