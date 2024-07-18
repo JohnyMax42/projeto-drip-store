@@ -1,6 +1,7 @@
 import React from "react"
 import './Banner.css'
 import Shoes from '../assets/Frame 53659.png'
+import Fogo from '../assets/fogo.png'
 export default function Banner() {
     return (
 
@@ -8,7 +9,8 @@ export default function Banner() {
             <div className="Banner-container1">
                 <div className="texto">
                     <p className="melhoresOfertas">Melhores ofertas personalizadas</p>
-                    <p className="textoPrincipal">Queima de stoque Nike🔥</p>
+                    <p className="textoPrincipal">Queima de stoque Nike</p>
+                    <img className="imageFogo" src={Fogo} alt="fogo" />
                     <span className="textoSecundario">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</span>
                     <br />
                     <input className="butomOfertas" id="" type="button" value="Ver Ofertas" />

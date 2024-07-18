@@ -23,6 +23,9 @@
     width: 510px;
     height: 352px;
 }
+.imageFogo{
+    align-items: flex-start;
+}
 
 .imagem1 {
     width: 733.51px;
