@@ -4,7 +4,7 @@ import Camisa from '../assets/camisa-star-wars.png'
 export default function Colecao1() {
     return (
         <div className="Colecao1">
-            <div className="texto">Coleçôes em destaque</div>
+            <div className="textoColection">Coleções em destaque</div>
             <div className="colecao-container1">
 
                 <div className="texto">
@@ -12,14 +12,17 @@ export default function Colecao1() {
                     <p className="textoNovoDrop">Novo Drop Supreme</p>
                     <input className="butomColecoes" id="" type="button" value="Comprar" />
                 </div>
+                <div>
 
-                <div className="imagem1Colecao" src={Camisa} alt="camisa">
+                    <img className="image1colecao1" src={Camisa} alt="camisa" />
 
                 </div>
 
             </div>
 
         </div>
+
+
 
 
 

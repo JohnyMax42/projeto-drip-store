@@ -9,6 +9,8 @@
   width: 405px;
   height: 251px;
   background: #D8E3F2 ;
+  border-radius: 8px;
+  margin-left: 100px;
 }
  
 .butomColecoes{
@@ -32,4 +34,31 @@
     justify-content: center;
     align-items: center;
     color: #474747;
+}
+
+.textoColection{
+    display: flex;
+    justify-self: center;
+    width: 283px;
+height: 38px;
+top: 913px;
+left: 100px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 24px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0.100px;
+text-align: left;
+color: rgba(71, 71, 71, 1);
+
+
+}
+.image1colecao1{
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do seu container */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: -170px;
+    margin-right:-160px;
+    margin-inline-start: auto;
 }
