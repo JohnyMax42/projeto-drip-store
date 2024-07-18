@@ -9,10 +9,15 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     padding: 20px;
-    border: 1px solid ${Cores.darkGray};
+    /* border: 1px solid ${Cores.darkGray}; */
     border-radius: 8px;
     width: 300px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+`;
+
+const ContainerTexto = styled.div`
+    display: flex;
+    flex-direction: row;
 `;
 
 const Imagem = styled.img`
@@ -25,19 +30,41 @@ const NomeProduto = styled.div`
     margin-top: 10px;
 `;
 
+const Preco = styled.div`    
+    font-size: 24px;
+    color: ${Cores.darkGray};
+    margin-top: 10px;
+
+    ${({ desconto }) => desconto && `
+        color: ${Cores.lightGray};
+        text-decoration: line-through;
+    `}
+`;
+
+// const SmallText = styled.span`
+//     padding-top: 10px;
+//     font-size: 12px;
+//     text-align: left;
+//     color: ${Cores.darkGray};
+//     font-weight: 500;
+// `;
+
 export default function ProductCard({ imagem, name, price, priceDiscount }) {
     return (
         <Container>
             <Imagem src={imagem} alt={name} />
+            {/* <SmallText>Tênis</SmallText> */}
             <NomeProduto>{name}</NomeProduto>
-            {priceDiscount ? (
-                <>
-                    <p className={"teste-paragrafo"}>${price}</p>
-                    <p>${priceDiscount}</p>
-                </>
-            ) : (
-                <p>{price}</p>
-            )}
+            <ContainerTexto>
+                {priceDiscount ? (
+                    <>
+                        <Preco className={"teste-paragrafo"}>${price}</Preco>
+                        <Preco>${priceDiscount}</Preco>
+                    </>
+                ) : (
+                    <Preco>${price}</Preco>
+                )}
+            </ContainerTexto>
         </Container>
     );
 }
