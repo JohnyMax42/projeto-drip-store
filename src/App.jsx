@@ -18,6 +18,7 @@ function App() {
           <Banner2 />
           <ProductListingPage />
         </div>} />
+
     </>
   )
 }

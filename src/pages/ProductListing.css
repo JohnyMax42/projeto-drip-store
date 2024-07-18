@@ -50,9 +50,8 @@ hr{
 
 
 /* tentando por caixa de check na cor certa */
-.caixasFiltro input[type="checkbox"]:checked {
+input[type="checkbox"]:checked {
     background-color: rgba(201, 32, 113, 1);
-    color: yellow;
 }
 
 input{
