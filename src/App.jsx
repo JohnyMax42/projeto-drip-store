@@ -18,7 +18,7 @@ function App() {
           <Banner />
           <Colecao1 />
           <Colecao2 />
-          <ProductCard imagem="src/assets/camisa-star-wars.png" name="Teste" price="100" priceDiscount="150" />
+          <ProductCard imagem="src/assets/camisa-star-wars.png" name="K-Swiss V8 - Masculino" price="100" priceDiscount="50" />
           <Banner2 />
           <ProductListingPage />
 
