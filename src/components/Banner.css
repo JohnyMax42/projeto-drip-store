@@ -19,12 +19,26 @@
 
 }
 
+.textfoto{
+    width: 480px;
+    height: 155px;
+    display: flex;
+    align-items: center;
+    
+}
+
 .texto {
     width: 510px;
     height: 352px;
 }
 .imageFogo{
-    align-items: flex-start;
+    display: flex;
+    width: 90px;
+    height: 75px;
+    margin-inline-end: 10px;
+    margin-top: 25px;
+    
+    
 }
 
 .imagem1 {

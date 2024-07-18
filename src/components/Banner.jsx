@@ -9,8 +9,10 @@ export default function Banner() {
             <div className="Banner-container1">
                 <div className="texto">
                     <p className="melhoresOfertas">Melhores ofertas personalizadas</p>
+                   <div className="textfoto"> 
                     <p className="textoPrincipal">Queima de stoque Nike</p>
-                    <img className="imageFogo" src={Fogo} alt="fogo" />
+                   <img className="imageFogo" src={Fogo} alt="fogo" />
+                    </div>
                     <span className="textoSecundario">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</span>
                     <br />
                     <input className="butomOfertas" id="" type="button" value="Ver Ofertas" />
