@@ -1,0 +1,35 @@
+ .Colecao1{
+  width: 1239px;
+  height: 309px;
+  background: #FFFFFF;
+  flex-wrap: wrap;
+} 
+
+.colecao-container1{
+  width: 405px;
+  height: 251px;
+  background: #D8E3F2 ;
+}
+ 
+.butomColecoes{
+    font-weight: 700;
+    width: 153px;
+    height: 48px;
+    margin-top: 44px;
+    color: #C92071;
+    background-color: var(--cor- white);
+    border: 0px;
+    border-radius: 8px;
+}
+
+.texto30off{
+    display: flex;
+    width: 96px;
+    height: 32px;
+    border: solid #E7FF86;
+    background-color:#E7FF86;
+    border-radius: 29px;
+    justify-content: center;
+    align-items: center;
+    color: #474747;
+}
