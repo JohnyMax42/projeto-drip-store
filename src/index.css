@@ -34,7 +34,13 @@
 a {
   font-weight: 500;
   color: #646cff;
-  text-decoration: inherit;
+  text-decoration: line-through;
+}
+
+.teste-paragrafo {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: line-through;
 }
 
 a:hover {
