@@ -1,18 +1,17 @@
 import React from 'react';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
+import RoutesPages from './RoutesPages';
+import { BrowserRouter } from 'react-router-dom';
 
-
-const Layout = ({ pagina }) => {
+export default function Layout(){
     return (
-        <div>
-            <Header />
-
-            {pagina}
-
-            <Footer />
-        </div>
-    );
-};
-
-export default Layout
+        <>
+        <BrowserRouter>
+            <Header/>
+            <RoutesPages/>
+            <Footer/>
+        </BrowserRouter>
+        </>
+    )
+}
