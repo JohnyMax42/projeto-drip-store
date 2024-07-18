@@ -1,5 +1,6 @@
 import './HeaderStyle.css'
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
 
@@ -13,13 +14,11 @@ export default function Header() {
                 <input id="botaoEntrar" type="button" value="Entrar" />
                 <a id="iconeCarrinho" href="#carrinho"></a>
             </div>
-            <div>
-                <nav id="linksHeader">
-                    <a className="links" href="#home">Home</a>
-                    <a className="links" href="#produtos">Produtos</a>
-                    <a className="links" href="#categorias">Categorias</a>
-                    <a className="links" href="#meusPedidos">Meus Pedidos</a>
-                </nav>
+            <div id="linksHeader">
+                <Link to={'/'} className="links">Home</Link>
+                <Link to={'/ProductListingPage'} className="links">Produtos</Link>
+                <Link to={'/ProductViewPage'} className="links">Categorias</Link>
+                <Link to={'/ProductViewPage'} className="links">Meus Pedidos</Link>
             </div>
         </header>
     )

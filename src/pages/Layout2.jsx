@@ -4,16 +4,14 @@ import Footer from '../components/Footer/Footer';
 import RoutesPages from './RoutesPages';
 import { BrowserRouter } from 'react-router-dom';
 
-const Layout2 = ({ pagina }) => {
+export default function Layout2(){
     return (
         <>
         <BrowserRouter>
-            <Header />
+            <Header/>
             <RoutesPages/>
-            <Footer />
+            <Footer/>
         </BrowserRouter>
         </>
-    );
-};
-
-export default Layout2
+    )
+}

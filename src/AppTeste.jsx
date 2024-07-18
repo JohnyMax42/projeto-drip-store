@@ -8,25 +8,15 @@ import Colecao1 from './components/Colecao1'
 import Colecao2 from './components/Colecao2'
 import Layout2 from './pages/Layout2'
 
-function App() {
-  const [count, setCount] = useState(0)
+function AppTeste() {
 
   return (
     <>
-    
-      <Layout pagina={
-        <div>
-          <Banner />
-          <Colecao1/>
-          <Colecao2 />
-          <Banner2 />
-          <ProductListingPage />
 
-        </div>} />
-
+        <Layout2></Layout2>
 
     </>
   )
 }
 
-export default App
+export default AppTeste
