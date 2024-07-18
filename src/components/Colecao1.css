@@ -11,17 +11,20 @@
   background: #D8E3F2 ;
   border-radius: 8px;
   margin-left: 100px;
+  margin-top: 20px;
 }
  
 .butomColecoes{
     font-weight: 700;
     width: 153px;
     height: 48px;
-    margin-top: 44px;
+    margin-bottom: 30px;
     color: #C92071;
     background-color: var(--cor- white);
     border: 0px;
     border-radius: 8px;
+    margin-left:30px ;
+    margin-top: 20px;
 }
 
 .texto30off{
@@ -56,9 +59,13 @@ color: rgba(71, 71, 71, 1);
 
 }
 .image1colecao1{
+   z-index: -1;
     max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do seu container */
     height: auto; /* Mantém a proporção da imagem */
     margin-top: -170px;
     margin-right:-160px;
     margin-inline-start: auto;
+}
+.texto{
+    
 }
