@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Cores from "../Cores";
-import '../../index.css'
+import Line from "../../assets/Line.png"
 
 const Container = styled.div`
     display: flex;
@@ -12,33 +12,39 @@ const Container = styled.div`
     /* border: 1px solid ${Cores.darkGray}; */
     border-radius: 8px;
     width: 300px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
 const ContainerTexto = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 `;
 
 const Imagem = styled.img`
     width: 292px;
     height: 321px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
 const NomeProduto = styled.div`
-    font-size: 18px;
+    font-size: 24px;
     margin-top: 10px;
+    font-weight: 400;
+    align-self: flex-start;
 `;
 
 const Preco = styled.div`    
     font-size: 24px;
+    font-weight: 700;
     color: ${Cores.darkGray};
     margin-top: 10px;
+`;
 
-    ${({ desconto }) => desconto && `
-        color: ${Cores.lightGray};
-        text-decoration: line-through;
-    `}
+const PrecoDesconto = styled.div`    
+    font-size: 24px;
+    font-weight: 400;
+    color: ${Cores.lightGray};
+    margin-top: 10px;
 `;
 
 // const SmallText = styled.span`
@@ -51,20 +57,27 @@ const Preco = styled.div`
 
 export default function ProductCard({ imagem, name, price, priceDiscount }) {
     return (
-        <Container>
-            <Imagem src={imagem} alt={name} />
-            {/* <SmallText>Tênis</SmallText> */}
-            <NomeProduto>{name}</NomeProduto>
+        <>
             <ContainerTexto>
-                {priceDiscount ? (
-                    <>
-                        <Preco className={"teste-paragrafo"}>${price}</Preco>
-                        <Preco>${priceDiscount}</Preco>
-                    </>
-                ) : (
-                    <Preco>${price}</Preco>
-                )}
+                Produtos em alta
+                <a href="">Ver todos</a>
+                {/* <img src={Line} alt="Line" width={2} /> */}
             </ContainerTexto>
-        </Container>
+            <Container>
+                <Imagem src={imagem} alt={name} />
+                {/* <SmallText>Tênis</SmallText> */}
+                <NomeProduto>{name}</NomeProduto>
+                <ContainerTexto>
+                    {priceDiscount ? (
+                        <>
+                            <PrecoDesconto className={"teste-paragrafo"} style={{ paddingRight: "15px" }}>${price}</PrecoDesconto>
+                            <Preco>${priceDiscount}</Preco>
+                        </>
+                    ) : (
+                        <Preco>${price}</Preco>
+                    )}
+                </ContainerTexto>
+            </Container >
+        </>
     );
 }
