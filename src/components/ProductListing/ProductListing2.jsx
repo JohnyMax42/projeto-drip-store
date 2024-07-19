@@ -60,6 +60,41 @@ export default function ProductListing2() {
             image: "src/assets/CardShoes.png",
             price: 200,
         },
+        {
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
+            price: 200,
+        },
+        {
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
+            price: 200,
+        },
+        {
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
+            price: 200,
+        },
+        {
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
+            price: 200,
+        },
+        {
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
+            price: 200,
+        },
+        {
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
+            price: 200,
+        },
+        {
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
+            price: 200,
+        },
     ];
 
     return (

@@ -58,6 +58,7 @@ export default function ProductListing() {
             image: "src/assets/CardShoes.png",
             price: 200,
         },
+        
     ];
 
     return (
