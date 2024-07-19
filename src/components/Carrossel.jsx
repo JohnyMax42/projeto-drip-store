@@ -17,7 +17,7 @@ function Carrossel() {
 
   return (
     <div>
-      <Carousel variant="dark" controls keyboard={true} pause="hover" slide={false} radius="4px">
+      <Carousel variant="dark" controls keyboard={true} pause="hover" slide={false} style={{ borderRadius: 4 }}>
         <Carousel.Item style={{ objectFit: 'contain' }}>
           <Banner />
           <Carousel.Caption>
