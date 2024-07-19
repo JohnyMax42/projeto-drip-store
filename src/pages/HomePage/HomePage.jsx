@@ -1,4 +1,3 @@
-import Banner from "../../components/Banner"
 import Banner2 from "../../components/Banner2"
 import Carrossel from "../../components/Carrossel"
 import Colecao1 from "../../components/Colecao1"
@@ -9,7 +8,6 @@ export default function HomePage() {
     return (
         <>
             <Carrossel/>
-            <Banner />
             <Colecao1 />
             <Colecao2 />
             <ProductListing></ProductListing>
