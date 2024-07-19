@@ -8,6 +8,7 @@ import ProductListing from "../../components/ProductListing/ProductListing"
 export default function HomePage() {
     return (
         <>
+            <Carrossel/>
             <Banner />
             <Colecao1 />
             <Colecao2 />
