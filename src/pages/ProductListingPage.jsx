@@ -30,12 +30,12 @@ export default function ProductListingPage(){
                     <hr id='linhaFiltros' />
                 </div>
 
-                <FilterGroup title='Marca' inputType='checkbox' options/>
-                <FilterGroup title='Categoria' inputType='checkbox' options='Esporte e Lazer'/>
-                <FilterGroup title='Gênero' inputType='checkbox' options='Masculino'/>
-                <FilterGroup title='Estado' inputType='radio' options='Novo'/>
+                <FilterGroup title='Marca' inputType='checkbox' options='Marka'/>
+                <FilterGroup title='Categoria' inputType='checkbox' options/>
+                <FilterGroup title='Gênero' inputType='checkbox' options/>
+                <FilterGroup title='Estado' inputType='radio' options/>
 
-                <div className='caixasFiltro'>
+                {/* <div className='caixasFiltro'>
                     <label htmlFor="" className='filtro'>Marca</label><br />
                     <input type="checkbox" name="marca" id="marcaAdiddas" />
                     <label htmlFor="marcaAdiddas">Adiddas</label><br />
@@ -74,7 +74,7 @@ export default function ProductListingPage(){
                     <label htmlFor="estadoNovo">Novo</label><br />
                     <input type="radio" name="estado" id="estadoUsado" />
                     <label htmlFor="estadoUsado">Usado</label>
-                </div>
+                </div> */}
 
                 </form>
 
