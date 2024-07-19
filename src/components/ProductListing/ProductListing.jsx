@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Cores from "../Cores";
 
 const Wrapper = styled.div`
+
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -15,7 +16,7 @@ export default function ProductListing() {
 
     const products = [
         {
-            name: "K-Swiss V8 - Masculin",
+            name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
             priceDiscount: 149
@@ -36,6 +37,16 @@ export default function ProductListing() {
             image: "src/assets/CardShoes.png",
             price: 200,
             priceDiscount: 149.9
+        },
+        {
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
+            price: 200,
+        },
+        {
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
+            price: 200,
         },
         {
             name: "K-Swiss V8 - Masculino",
