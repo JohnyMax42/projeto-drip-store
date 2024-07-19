@@ -9,6 +9,8 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin: 20px;
+    /* Bordar para se guiar melhor */
     /* border: 1px solid ${Cores.darkGray}; */
     border-radius: 8px;
     width: 300px;
@@ -47,37 +49,22 @@ const PrecoDesconto = styled.div`
     margin-top: 10px;
 `;
 
-// const SmallText = styled.span`
-//     padding-top: 10px;
-//     font-size: 12px;
-//     text-align: left;
-//     color: ${Cores.darkGray};
-//     font-weight: 500;
-// `;
-
-export default function ProductCard({ imagem, name, price, priceDiscount }) {
+export default function ProductCard({ imagem, name, price = 0, priceDiscount = 0 }) {
     return (
-        <>
-            {/* <ContainerTexto>
-                Produtos em alta
-                <a href="">Ver todos</a>
-                <img src={Line} alt="Line" width={2} />
-            </ContainerTexto> */}
-            <Container>
-                <Imagem src={imagem} alt={name} />
-                {/* <SmallText>Tênis</SmallText> */}
-                <NomeProduto>{name}</NomeProduto>
-                <ContainerTexto>
-                    {priceDiscount ? (
-                        <>
-                            <PrecoDesconto className={"teste-paragrafo"} style={{ paddingRight: "15px" }}>${price}</PrecoDesconto>
-                            <Preco>${priceDiscount}</Preco>
-                        </>
-                    ) : (
-                        <Preco>${price}</Preco>
-                    )}
-                </ContainerTexto>
-            </Container >
-        </>
+        <Container>
+            <Imagem src={imagem} alt={name} />
+            {/* <SmallText>Tênis</SmallText> */}
+            <NomeProduto>{name}</NomeProduto>
+            <ContainerTexto>
+                {priceDiscount ? (
+                    <>
+                        <PrecoDesconto className={"teste-paragrafo"} style={{ paddingRight: "15px" }}>${price}</PrecoDesconto>
+                        <Preco>${priceDiscount}</Preco>
+                    </>
+                ) : (
+                    <Preco>${price}</Preco>
+                )}
+            </ContainerTexto>
+        </Container >
     );
 }
