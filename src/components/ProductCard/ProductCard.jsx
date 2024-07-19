@@ -35,6 +35,8 @@ const NomeProduto = styled.div`
     font-size: 24px;
     margin-top: 10px;
     font-weight: 400;
+    overflow: hidden; /* Esconde o texto que excede o espaço disponível */
+    white-space: nowrap; 
 `;
 
 const Preco = styled.div`    
