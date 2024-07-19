@@ -1,4 +1,5 @@
 import './ProductListing.css'
+import FilterGroup from '../components/FilterGroup/FilterGroup'
 
 export default function ProductListingPage(){
     
@@ -11,7 +12,7 @@ export default function ProductListingPage(){
 
                 
                 <div id='botaoOrdem'>
-                    <label htmlFor="selecaoPrecos">Ordenar por:</label>
+                    <label htmlFor="selecaoPrecos"  id='labelSelecao'>Ordenar por:</label>
                     <select name="selecao" id="selecaoPrecos">
                         <option value="1"><span>menor preço</span></option>
                         <option value="2">maior preço</option>
@@ -26,9 +27,14 @@ export default function ProductListingPage(){
 
                 <div>
                     <p className='filtro'>Filtrar por</p>
-                    <hr />
+                    <hr id='linhaFiltros' />
                 </div>
-            
+
+                <FilterGroup title='Marca' inputType='checkbox' options/>
+                <FilterGroup title='Categoria' inputType='checkbox' options='Esporte e Lazer'/>
+                <FilterGroup title='Gênero' inputType='checkbox' options='Masculino'/>
+                <FilterGroup title='Estado' inputType='radio' options='Novo'/>
+
                 <div className='caixasFiltro'>
                     <label htmlFor="" className='filtro'>Marca</label><br />
                     <input type="checkbox" name="marca" id="marcaAdiddas" />
