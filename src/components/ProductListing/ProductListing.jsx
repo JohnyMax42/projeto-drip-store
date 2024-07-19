@@ -6,6 +6,7 @@ import Cores from "../Cores";
 const Wrapper = styled.div`
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     padding-left: 35px;
     padding-right: 35px;
 `;
@@ -14,31 +15,36 @@ export default function ProductListing() {
 
     const products = [
         {
-            name: "Nome do produto 1",
-            image: "src/assets/shoes.png",
+            name: "K-Swiss V8 - Masculin",
+            image: "src/assets/CardShoes.png",
             price: 200,
             priceDiscount: 149
         },
         {
-            name: "Nome do produto 2",
-            image: "src/assets/shoes2.png",
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
             price: 49.9
         },
         {
-            name: "Nome do produto 1",
-            image: "src/assets/shoes.png",
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
             price: 200,
             priceDiscount: 149.9
         },
         {
-            name: "Nome do produto 1",
-            image: "src/assets/shoes2.png",
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
             price: 200,
             priceDiscount: 149.9
         },
         {
-            name: "Nome do produto 1",
-            image: "src/assets/shoes.png",
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
+            price: 200,
+        },
+        {
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
             price: 200,
         },
     ];
@@ -49,6 +55,7 @@ export default function ProductListing() {
                 {products.map((product, index) => (
                     <ProductCard
                         key={index}
+                        name={product.name}
                         imagem={product.image}
                         price={product.price}
                         priceDiscount={product.priceDiscount}
