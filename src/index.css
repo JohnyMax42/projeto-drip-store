@@ -95,3 +95,19 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #CCCCCC;
+}
+
+.carousel-dark .carousel-indicators button.active,
+.carousel-indicators button[aria-current="true"] [data-bs-target] {
+  background-color: #C92071;
+}

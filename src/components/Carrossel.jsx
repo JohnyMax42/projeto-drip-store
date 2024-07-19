@@ -17,7 +17,7 @@ function Carrossel() {
 
   return (
     <div>
-      <Carousel variant="dark" controls keyboard={true} pause="hover">
+      <Carousel variant="dark" controls keyboard={true} pause="hover" slide={false} radius="4px">
         <Carousel.Item style={{ objectFit: 'contain' }}>
           <Banner />
           <Carousel.Caption>
@@ -73,7 +73,7 @@ function Carrossel() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-    </div>
+    </div >
   )
 }
 
