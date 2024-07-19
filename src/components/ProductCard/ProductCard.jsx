@@ -58,11 +58,11 @@ const PrecoDesconto = styled.div`
 export default function ProductCard({ imagem, name, price, priceDiscount }) {
     return (
         <>
-            <ContainerTexto>
+            {/* <ContainerTexto>
                 Produtos em alta
                 <a href="">Ver todos</a>
-                {/* <img src={Line} alt="Line" width={2} /> */}
-            </ContainerTexto>
+                <img src={Line} alt="Line" width={2} />
+            </ContainerTexto> */}
             <Container>
                 <Imagem src={imagem} alt={name} />
                 {/* <SmallText>Tênis</SmallText> */}
