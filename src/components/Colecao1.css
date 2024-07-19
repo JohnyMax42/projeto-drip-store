@@ -1,4 +1,6 @@
  .Colecao1 {
+    display: flex;
+    flex-direction: column;
      width: 1239px;
      height: 309px;
      background: #FFFFFF;
@@ -6,16 +8,17 @@
  }
 
  .colecao-container1 {
+    display: flex;
      width: 405px;
      height: 251px;
      background: #D8E3F2;
      border-radius: 8px;
-     margin-left: 100px;
-     margin-top: 20px;
+ 
 
  }
 
  .butomColecoes {
+     z-index: 1;
      position: absolute;
      font-weight: 700;
      width: 153px;
@@ -24,16 +27,18 @@
      background-color: var(--cor- white);
      border: 0px;
      border-radius: 8px;
-     margin-top: 130px;
+     margin-top: 100px;
+
+   
 
 
 
  }
 
  .texto30off {
-
-     z-index: 2;
-     align-items: center;
+  
+    
+    
      text-align: center;
      width: 96px;
      height: 32px;
@@ -41,52 +46,53 @@
      background-color: #E7FF86;
      border-radius: 29px;
      color: #474747;
-    
+     margin-top: 20px;
+     
+     
+  
 
-
-
-
- }
+     
+    }
 
  .textoColection {
-
+    
      width: 283px;
      height: 38px;
-     top: 913px;
-     left: 100px;
-     gap: 0px;
-     opacity: 0px;
-     font-family: Inter;
      font-size: 24px;
      font-weight: 700;
-     line-height: 38px;
-     letter-spacing: 0.100px;
-     text-align: left;
+   
+     justify-content: center;
+     text-align: center;
      color: rgba(71, 71, 71, 1);
 
-
- }
+}
 
  .image1colecao1 {
 
-     z-index: 1;
-     max-width: 100%;
-     /* Garante que a imagem não ultrapasse o tamanho do seu container */
-     height: auto;
+
+width: 242px;
+height: 251px;
+top: 971px;
+left: 263px;
+
+
+
+
+    
      /* Mantém a proporção da imagem */
-     margin-top: -40px;
-     margin-left: 162px;
+
 
  }
 
  .textoNovoDrop {
+ 
      position: absolute;
      width: 172px;
      height: 72px;
      font-size: 32px;
      font-weight: 700;
      line-height: 36px;
-     margin-top: 50px;
-
+     /* margin-top: 18px; */
+    
 
  }

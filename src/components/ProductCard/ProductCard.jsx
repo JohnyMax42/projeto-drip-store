@@ -31,6 +31,7 @@ const Imagem = styled.img`
 `;
 
 const NomeProduto = styled.div`
+
     text-align: left;
     font-size: 24px;
     margin-top: 10px;
