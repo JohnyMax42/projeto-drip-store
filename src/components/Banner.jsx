@@ -3,9 +3,10 @@ import './Banner.css'
 import Shoes from '../assets/Frame 53659.png'
 import Fogo from '../assets/fogo.png'
 export default function Banner() {
-    return (
 
-        <div className="Banner">
+    return (
+        
+ <div className="Banner">
             <div className="Banner-container1">
                 <div className="texto">
                     <p className="melhoresOfertas">Melhores ofertas personalizadas</p>
