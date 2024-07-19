@@ -9,7 +9,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin: 20px;
+    margin: 0px 10px 20px 0px;
     /* Bordar para se guiar melhor */
     /* border: 1px solid ${Cores.darkGray}; */
     border-radius: 8px;
