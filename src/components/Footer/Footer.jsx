@@ -36,7 +36,7 @@ export default function Footer() {
                     <p>(85) 3051-3411</p>
                 </div>
             </div>
-            <hr width="1240px" size="1px" />
+            <hr id='linhaFooter' width="1240px" size="1px" />
             <p>@ 2022 Digital College</p>
         </footer>
     )
