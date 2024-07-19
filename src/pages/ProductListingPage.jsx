@@ -1,5 +1,6 @@
 import './ProductListing.css'
 import FilterGroup from '../components/FilterGroup/FilterGroup'
+import ProductListing2 from '../components/ProductListing/ProductListing2'
 
 export default function ProductListingPage(){
     
@@ -78,9 +79,8 @@ export default function ProductListingPage(){
 
                 </form>
 
-                <div>
-                    <h1>LISTA DE CARDS</h1>
-                </div>
+            
+                <ProductListing2></ProductListing2>
 
             </div>
             
