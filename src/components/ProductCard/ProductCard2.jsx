@@ -15,7 +15,8 @@ const Container = styled.div`
     /* border: 1px solid ${Cores.darkGray}; */
     border-radius: 8px;
     width: 300px;
-    
+    width: calc(33.33% - 20px);
+    background-color: #ffffff;
 `;
 
 const ContainerTexto = styled.div`
