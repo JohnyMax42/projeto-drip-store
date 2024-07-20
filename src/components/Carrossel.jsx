@@ -15,6 +15,17 @@ import image8 from '../assets/homeSlides/home-slide-8.jpeg';
 
 function Carrossel() {
 
+  const images = [
+    { src: image1, alt: "First Slide" },
+    { src: image2, alt: "Second Slide" },
+    { src: image3, alt: "Third Slide" },
+    { src: image4, alt: "Fourth Slide" },
+    { src: image5, alt: "Fifth Slide" },
+    { src: image6, alt: "Sixth Slide" },
+    { src: image7, alt: "Seventh Slide" },
+    { src: image8, alt: "Eighth Slide" }
+  ];
+
   return (
     <div>
       <Carousel variant="dark" controls keyboard={true} pause="hover" slide={false} style={{ borderRadius: 4 }}>
@@ -24,54 +35,12 @@ function Carrossel() {
 
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item style={{ objectFit: 'contain' }}>
-          <img className="d-flex w-100" src={image1} alt="Second Slide" style={{ height: 681, width: 1440 }} />
-          <Carousel.Caption>
-
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item style={{ objectFit: 'contain' }}>
-          <img className="d-flex w-100" src={image2} alt="Third Slide" style={{ height: 681, width: 1440 }} />
-          <Carousel.Caption>
-
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item style={{ objectFit: 'contain' }}>
-          <img className="d-flex w-100" src={image3} alt="Second Slide" style={{ height: 681, width: 1440 }} />
-          <Carousel.Caption>
-
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item style={{ objectFit: 'contain' }}>
-          <img className="d-flex w-100" src={image4} alt="Second Slide" style={{ height: 681, width: 1440 }} />
-          <Carousel.Caption>
-
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item style={{ objectFit: 'contain' }}>
-          <img className="d-flex w-100" src={image5} alt="Second Slide" style={{ height: 681, width: 1440 }} />
-          <Carousel.Caption>
-
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item style={{ objectFit: 'contain' }}>
-          <img className="d-flex w-100" src={image6} alt="Second Slide" style={{ height: 681, width: 1440 }} />
-          <Carousel.Caption>
-
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item style={{ objectFit: 'contain' }}>
-          <img className="d-flex w-100" src={image7} alt="Second Slide" style={{ height: 681, width: 1440 }} />
-          <Carousel.Caption>
-
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item style={{ objectFit: 'contain' }}>
-          <img className="d-flex w-100" src={image8} alt="Second Slide" style={{ height: 681, width: 1440 }} />
-          <Carousel.Caption>
-
-          </Carousel.Caption>
-        </Carousel.Item>
+        {images.map((image, index) => (
+          <Carousel.Item key={index} style={{ objectFit: 'contain' }}>
+            <img className="d-flex w-100" src={image.src} alt={image.alt} style={{ height: 681, width: 1440 }} />
+            <Carousel.Caption></Carousel.Caption>
+          </Carousel.Item>
+        ))}
       </Carousel>
     </div >
   )
