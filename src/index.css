@@ -111,3 +111,8 @@ button:focus-visible {
 .carousel-indicators button[aria-current="true"] [data-bs-target] {
   background-color: #C92071;
 }
+
+.carousel-control-prev-icon-{
+
+
+}
