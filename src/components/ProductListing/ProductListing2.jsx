@@ -6,10 +6,10 @@ import Cores from "../Cores";
 const Wrapper = styled.div`
 
 display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     justify-content: center;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
     max-width: 1000px; /* Largura máxima do container */
     margin: 0 auto; /* Centraliza o container na página */
 `;

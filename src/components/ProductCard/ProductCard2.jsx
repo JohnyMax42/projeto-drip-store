@@ -9,14 +9,14 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+
     margin: 0px 10px 20px 0px;
     /* Bordar para se guiar melhor */
     /* border: 1px solid ${Cores.darkGray}; */
     border-radius: 8px;
     width: 300px;
     width: calc(33.33% - 20px);
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 `;
 
 const ContainerTexto = styled.div`
@@ -26,7 +26,7 @@ const ContainerTexto = styled.div`
 `;
 
 const Imagem = styled.img`
-    width: 292px;
+    max-width: 100%;
     height: 321px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     object-fit: contain;
