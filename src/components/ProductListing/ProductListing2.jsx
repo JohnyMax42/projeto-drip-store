@@ -8,9 +8,9 @@ const Wrapper = styled.div`
 display: flex;
     flex-flow: wrap;
     justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 1000px; /* Largura máxima do container */
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 904px; /* Largura máxima do container */
     margin: 0 auto; /* Centraliza o container na página */
 `;
 
