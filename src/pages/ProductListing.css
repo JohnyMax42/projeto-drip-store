@@ -2,14 +2,16 @@
     background-color: rgba(249, 248, 254, 1);
     display: flex;
     flex-direction: column;
+    width: auto;
     padding-inline: 100px;
     padding-top: 70px;
     padding-bottom: 140px;
+    gap: 60px;
 }
 .bloco{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 #botaoOrdem{
     width:308px;
@@ -39,35 +41,24 @@
     height: 60px;
     font-weight: 400;
 }
-form{
+#campoFiltragem{
     width: 308px;
-    height: auto;
+    height: fit-content;
     background-color: rgba(255, 255, 255, 1);
     border: 1px;
     border-radius: 4px;
-    color: #474747;
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-left: 30px;
-    padding-top: 30px;
+    padding: 30px 0px 30px 30px;
+    margin-right: 28px;
 }
-#linhaFiltros{
+#tituloFiltro{
+    font-size: 16px;
+    color: #474747;
+}
+#linhaFiltro{
     width: 248px;
     height: 1px;
     color: #CCCCCC;
-}
-
-input{
-    width: 22px;
-    height: 22px;
-    /* visibility: hidden; */
-    
-}
-/* input:checked {
-    background-color: rgba(201, 32, 113, 1);
-} */
- 
-.filtro{
-    font-weight: bold;
 }
