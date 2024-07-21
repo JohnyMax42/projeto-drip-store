@@ -8,7 +8,7 @@ export default function Banner() {
         
  <div className="Banner">
             <div className="Banner-container1">
-                <div className="texto">
+                <div className="texto" id="padtexto">
                     <p className="melhoresOfertas">Melhores ofertas personalizadas</p>
                    <div className="textfoto"> 
                     <p className="textoPrincipal">Queima de stoque Nike</p>
