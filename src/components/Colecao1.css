@@ -24,10 +24,10 @@
      width: 153px;
      height: 48px;
      color: #C92071;
-     background-color: var(--cor- white);
+     background-color: rgba(245, 245, 245, 1);
      border: 0px;
      border-radius: 8px;
-     margin-top: 100px;
+     margin-top: 100px; 
 
    
 
