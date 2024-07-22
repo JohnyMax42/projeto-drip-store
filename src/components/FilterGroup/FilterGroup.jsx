@@ -18,7 +18,6 @@ const DivStyle = styled.div`
     margin-top: 10px;
     display: flex;
     gap: 20px;
-
 `;
 
 //estilo dos inputs
@@ -63,7 +62,7 @@ function EscolhaOption({escolher, inputType}){
         <>
         {Opcoes.map((opcao, index) => (
         <DivStyle key={index}>
-          <InputStyle type={inputType} name={`Type${inputType}`} id={`${escolher}-${index}`} value={opcao.texto}/>
+          <InputStyle className="inputFiltro" type={inputType} name={`Type${inputType}`} id={`${escolher}-${index}`} value={opcao.texto}/>
           <label htmlFor={`${escolher}-${index}`}>{opcao.texto}</label>
         </DivStyle>
       ))}
