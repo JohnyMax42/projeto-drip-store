@@ -20,6 +20,172 @@
 .lateralidade{
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     gap: 15px;
+}
+
+.escolhacor[type="radio"]::before{
+    content: "";
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    border: 3px;
+    /* border-radius: 50%; */
+    border-color:  #e60909;
+    background-color: rgb(77, 58, 58);
+    background-size: auto;
+}
+.escolhacor[type="radio"]:checked::before{
+    content: "";
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    border: 3px;
+    /* border-radius: 50%; */
+    border-color:  #1c8f14;
+    background-size: auto;
+}
+
+.escolhacor{
+    width: 42px;
+    height: 35px;
+ 
+}
+
+#corAzul[type="radio"]::before{
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border: 3px;
+    border-radius: 50%;
+    background-color: rgba(111, 238, 255, 1);
+    background-size: auto;
+    background: radial-gradient(
+        rgba(111, 238, 255, 1) 0%,
+        rgba(111, 238, 255, 1) 50%,
+        white 50%,
+        white 100%
+    )
+    
+}
+
+#corAzul[type="radio"]:checked::before{
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(111, 238, 255, 1);
+    border: 3px solid  rgba(201, 32, 113, 1);
+    border-radius: 50%; /* Raio de curvatura */
+    background: radial-gradient(
+        rgba(111, 238, 255, 1) 0%,
+        rgba(111, 238, 255, 1) 60%,
+        white 60%,
+        white 100%
+    )
+}
+
+#corvermelho[type="radio"]::before{
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border: 3px;
+    border-radius: 50%;
+    background-color: rgba(255, 105, 105, 1);
+    background-size: auto;
+    background: radial-gradient(
+        rgba(255, 105, 105, 1) 0%,
+        rgba(255, 105, 105, 1) 50%,
+        white 50%,
+        white 100%
+    )
+    
+}
+
+#corvermelho[type="radio"]:checked::before{
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(255, 105, 105, 1);
+    border: 3px solid  rgba(201, 32, 113, 1);
+    border-radius: 50%; /* Raio de curvatura */
+    background: radial-gradient(
+        rgba(255, 105, 105, 1) 0%,
+        rgba(255, 105, 105, 1) 60%,
+        white 60%,
+        white 100%
+    )
+}
+
+
+#corPreto[type="radio"]::before{
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border: 3px;
+    border-radius: 50%;
+    background-color: rgba(94, 94, 94, 1);
+    background-size: auto;
+    background: radial-gradient(
+        rgba(94, 94, 94, 1) 0%,
+        rgba(94, 94, 94, 1)50%,
+        white 50%,
+        white 100%
+    )
+    
+}
+
+#corPreto[type="radio"]:checked::before{
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(94, 94, 94, 1);
+    border: 3px solid  rgba(201, 32, 113, 1);
+    border-radius: 50%; /* Raio de curvatura */
+    background: radial-gradient(
+        rgba(94, 94, 94, 1) 0%,
+        rgba(94, 94, 94, 1) 60%,
+        white 60%,
+        white 100%
+    )
+}
+
+
+#corRoxo[type="radio"]::before{
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border: 3px;
+    border-radius: 50%;
+    background-color: rgba(109, 112, 183, 1);
+    background-size: auto;
+    background: radial-gradient(
+        rgba(109, 112, 183, 1) 0%,
+        rgba(109, 112, 183, 1)50%,
+        white 50%,
+        white 100%
+    )
+    
+}
+
+#corRoxo[type="radio"]:checked::before{
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(109, 112, 183, 1);
+    border: 3px solid  rgba(201, 32, 113, 1);
+    border-radius: 50%; /* Raio de curvatura */
+    background: radial-gradient(
+        rgba(109, 112, 183, 1) 0%,
+        rgba(109, 112, 183, 1) 60%,
+        white 60%,
+        white 100%
+    )
 }

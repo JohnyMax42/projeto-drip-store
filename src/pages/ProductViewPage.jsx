@@ -59,10 +59,10 @@ export default function ProductViewPage() {
                     </div>
                     <p>Cor</p>
                     <div className='lateralidade'>
-                        <input type="radio" name="corSapato" id="corAzul" />
-                        <input type="radio" name="corSapato" id="corVermelho" />
-                        <input type="radio" name="corSapato" id="corPreto" />
-                        <input type="radio" name="corSapato" id="corRoxo" />
+                        <input className = "escolhacor" type="radio" name="corSapato" id="corAzul" />
+                        <input className = "escolhacor" type="radio" name="corSapato" id="corvermelho" />
+                        <input className = "escolhacor" type="radio" name="corSapato" id="corPreto" />
+                        <input className = "escolhacor" type="radio" name="corSapato" id="corRoxo" />
                     </div>
                     <button className='bg-warning text-light'>COMPRAR</button>
                 </div>
