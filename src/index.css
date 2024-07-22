@@ -121,3 +121,8 @@ button:focus-visible {
   padding: 2px 15px 2px 15px;
   border-radius: 6px;
 }
+
+.links.selected {
+  border-bottom: 4px solid var(--cor-primary);
+  border-radius: 1.5px;
+}
