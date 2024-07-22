@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Cores from "../Cores";
 
 //estilo do titulo
-const Titulo = styled.div`
+const Titulo = styled.div`    
     color: ${Cores.darkGray2};
     font-size: bold 14px;
     font-weight: 700;

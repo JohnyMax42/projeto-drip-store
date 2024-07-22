@@ -26,6 +26,7 @@
     height: 44px;
     margin-top: 42px;
     margin-left: 104px;
+    cursor: pointer;
 }
 
 #barraPesquisa {
@@ -95,7 +96,7 @@
     margin-right: 100px;
 }
 
-#bolinhaCarrinho{
+#bolinhaCarrinho {
     width: 17px;
     height: 17px;
     background-color: #EE4266;
@@ -126,5 +127,7 @@
 #linksHeader a:hover {
     color: var(--cor-primaria);
     font-weight: 700;
-    text-decoration: solid underline 3px;
+    /* text-decoration: solid underline 3px; */
+    border-bottom: 4px solid var(--cor-primary);
+    border-radius: 1.5px;
 }

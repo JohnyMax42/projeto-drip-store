@@ -8,8 +8,8 @@ function App() {
 
   return (
     <>
-    
-    <Layout></Layout>
+
+      <Layout style={{ backgroundColor: '#CCCCCC' }}></Layout>
 
 
     </>

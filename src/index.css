@@ -94,6 +94,11 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+
+  button.selected {
+    background-color: var(--cor-primary);
+    color: var(--white);
+  }
 }
 
 .carousel-indicators [data-bs-target] {
@@ -112,7 +117,12 @@ button:focus-visible {
   background-color: #C92071;
 }
 
-.carousel-control-prev-icon-{
+.paragrafo-estrela {
+  padding: 2px 15px 2px 15px;
+  border-radius: 6px;
+}
 
-
+.links.selected {
+  border-bottom: 4px solid var(--cor-primary);
+  border-radius: 1.5px;
 }

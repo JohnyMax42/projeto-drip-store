@@ -1,13 +1,23 @@
 import './HeaderStyle.css'
 import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
 
 export default function Header() {
+
+    const [selectedLink, setSelectedLink] = useState('Home');
+
+    const handleLinkSelection = (linkName) => {
+        setSelectedLink(linkName);
+    };
 
     return (
         <header className="caixaHeader">
             <div id='cabecalho'>
-                <img id="logo" src={logo} alt="logo" />
+                <Link to={'/'}
+                    onClick={() => handleLinkSelection('Home')}>
+                    <img id="logo" src={logo} alt="logo" />
+                </Link>
                 <input id="barraPesquisa" type="text" placeholder="Pesquisar produto..." />
                 <input id="botaoLupa" type="button" value='' />
                 <a id="cadastro" className="links" href="#cadastro">Cadastre-se</a>
@@ -17,10 +27,14 @@ export default function Header() {
                 </a>
             </div>
             <div id="linksHeader">
-                <Link to={'/'} className="links">Home</Link>
-                <Link to={'/ProductListingPage'} className="links">Produtos</Link>
-                <Link to={'/ProductViewPage'} className="links">Categorias</Link>
-                <Link to={'/ProductViewPage'} className="links">Meus Pedidos</Link>
+                <Link to={'/'} className={`links ${selectedLink === 'Home' ? 'selected' : ''}`}
+                    onClick={() => handleLinkSelection('Home')}>Home</Link>
+                <Link to={'/ProductListingPage'} className={`links ${selectedLink === 'Produtos' ? 'selected' : ''}`}
+                    onClick={() => handleLinkSelection('Produtos')}>Produtos</Link>
+                <Link to={'/ProductViewPage'} className={`links ${selectedLink === 'Categorias' ? 'selected' : ''}`}
+                    onClick={() => handleLinkSelection('Categorias')}>Categorias</Link>
+                <Link to={'/ProductViewPage'} className={`links ${selectedLink === 'Pedidos' ? 'selected' : ''}`}
+                    onClick={() => handleLinkSelection('Pedidos')}>Meus Pedidos</Link>
             </div>
         </header>
     )

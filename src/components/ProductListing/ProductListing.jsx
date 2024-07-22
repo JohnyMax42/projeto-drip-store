@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import styled from "styled-components";
 import Cores from "../Cores";
@@ -13,6 +13,24 @@ const Wrapper = styled.div`
 `;
 
 export default function ProductListing() {
+    const [dadosAPI, setDadosAPI] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('https://api-store-do1w.onrender.com/shoes');
+                const data = await response.json();
+                setDadosAPI(data);
+                setLoading(false);
+            } catch (error) {
+                console.error('Erro ao buscar dados da API:', error);
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     const products = [
         {
@@ -58,7 +76,7 @@ export default function ProductListing() {
             image: "src/assets/CardShoes.png",
             price: 200,
         },
-        
+
     ];
 
     return (

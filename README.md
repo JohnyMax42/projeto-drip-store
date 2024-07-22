@@ -8,6 +8,12 @@ Uma breve descrição do seu projeto.
 - Funcionalidade 2
 - ... -->
 
+## Integrantes 
+- Misael Fernandes Costa
+- Nicolas Marques Gomes
+- Levi Bezerra Ferreira
+- Johny Max Ernesto de Paulo
+
 ## Tecnologias Utilizadas
 
 - React
