@@ -14,7 +14,10 @@ export default function Header() {
     return (
         <header className="caixaHeader">
             <div id='cabecalho'>
-                <img id="logo" src={logo} alt="logo" />
+                <Link to={'/'}
+                    onClick={() => handleLinkSelection('Home')}>
+                    <img id="logo" src={logo} alt="logo" />
+                </Link>
                 <input id="barraPesquisa" type="text" placeholder="Pesquisar produto..." />
                 <input id="botaoLupa" type="button" value='' />
                 <a id="cadastro" className="links" href="#cadastro">Cadastre-se</a>

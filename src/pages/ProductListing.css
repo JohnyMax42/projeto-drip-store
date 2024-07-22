@@ -75,6 +75,7 @@
     border-color:  #666666;
     background-color: white;
     background-size: auto;
+    border-radius: 4px;
 }
 
 .inputFiltro[type="checkbox"]:checked::before{
