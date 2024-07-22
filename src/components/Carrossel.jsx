@@ -28,7 +28,11 @@ function Carrossel() {
 
   return (
     <div>
-      <Carousel variant="dark" controls keyboard={true} interval={null} pause="hover" slide={false} style={{ borderRadius: 4 }}>
+      {/* Variant muda a cor geral para branco ou escuro
+      keyboard permite usar a setas do teclado para mudar o carrosel
+      pause permite que ao colocar o mouse em cima do carrosel ele para
+      slide travar o carrousel*/}
+      <Carousel variant="dark" fade controls keyboard={true} interval={3500} pause="hover" slide={true} style={{ borderRadius: 4 }}>
         <Carousel.Item style={{ objectFit: 'contain' }}>
           <Banner />
           <Carousel.Caption>
