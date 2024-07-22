@@ -17,21 +17,15 @@ const DivStyle = styled.div`
     width: auto;
     margin-top: 10px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
+
 `;
 
 //estilo dos inputs
 const InputStyle = styled.input`
-    width: 22px;
+    width: 22x;
     height: 22px;
-    //visibility: hidden;
-    //background-color: white;
-    &:checked{
-    background-color: ${Cores.primary};
-    color: white;
-    }
 `;
-
 
 //opções de categorias dos filtros
 function EscolhaOption({escolher, inputType}){

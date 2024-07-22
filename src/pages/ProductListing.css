@@ -65,3 +65,54 @@
     margin-right: 30px;
     color: #CCCCCC;
 }
+
+input[type="checkbox"]::before{
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border: 1px solid;
+    border-color:  #666666;
+    background-color: white;
+    background-size: auto;
+}
+
+input[type="checkbox"]:checked::before{
+    content: "";
+    display: inline-block;
+    border-color: #C92071;
+    background-color: #C92071;
+    background-image: url(../assets/Vector3.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 13.5px 9px;
+}
+
+input[type="radio"]::before{
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color:  #666666;
+    background-color: white;
+    background-size: auto;
+}
+
+input[type="radio"]:checked::before{
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-color: #C92071;
+    display: flex;
+    background: radial-gradient(
+        #C92071 0%,
+        #C92071 50%,
+        white 50%,
+        white 100%
+    )
+}

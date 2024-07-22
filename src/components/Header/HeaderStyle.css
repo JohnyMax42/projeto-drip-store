@@ -86,11 +86,23 @@
     background-position-y: bottom;
     background-size: 24px;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
     width: 33px;
     height: 29px;
     margin-top: 47px;
     margin-left: 70px;
     margin-right: 100px;
+}
+
+#bolinhaCarrinho{
+    width: 17px;
+    height: 17px;
+    background-color: #EE4266;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .links {

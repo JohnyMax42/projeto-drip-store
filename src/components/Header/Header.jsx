@@ -12,7 +12,9 @@ export default function Header() {
                 <input id="botaoLupa" type="button" value='' />
                 <a id="cadastro" className="links" href="#cadastro">Cadastre-se</a>
                 <input id="botaoEntrar" type="button" value="Entrar" />
-                <a id="iconeCarrinho" href="#carrinho"></a>
+                <a id="iconeCarrinho" href="#carrinho">
+                    <div id='bolinhaCarrinho'>2</div>
+                </a>
             </div>
             <div id="linksHeader">
                 <Link to={'/'} className="links">Home</Link>
