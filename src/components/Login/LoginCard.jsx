@@ -36,7 +36,7 @@ export default function LoginCard() {
         }
     };
 
-    const Wrapper = styled.div`
+const Wrapper = styled.div`
         display: grid;
         flex-flow: column wrap;
         justify-content: center;
@@ -66,7 +66,7 @@ export default function LoginCard() {
     const WrapperDados = styled.div`
         font-weight: 700;
     `
-    
+
     const BotaoAcessar = styled.button`
         width: 100%;
         height: 48px;
@@ -76,6 +76,62 @@ export default function LoginCard() {
         border: 0px;
         border-radius: 8px;
     `
+
+export default function LoginCard() {
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyAOuprveLnjUp7UHM_QuqG1b3z1OjMy9R8",
+        authDomain: "tutorialff-f3880.firebaseapp.com",
+        projectId: "tutorialff-f3880",
+        storageBucket: "tutorialff-f3880.appspot.com",
+        messagingSenderId: "1055193701629",
+        appId: "1:1055193701629:web:0dd03008f5149666817294"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value);
+    }
+
+    const handleSenhaChange = (event) => {
+        setSenha(event.target.value);
+    }
+
+    // const handleGmailLogin = async () => {
+    //     try {
+    //         const auth = getAuth();
+    //         const email = ''; // Pode ser um input do usuário
+    //         const senha = ''; // Pode ser um input do usuário
+
+    //         await signInWithEmailAndPassword(auth, email, senha);
+    //         // Autenticação bem-sucedida! Redirecione o usuário para a página principal.
+    //     } catch (error) {
+    //         console.error('Erro ao fazer login:', error);
+    //     }
+    // };
+
+    const handleLogin = async (event) => {
+        event.preventDefault();
+        try {
+            const auth = getAuth();
+            await signInWithEmailAndPassword(auth, email, senha);
+            console.log('Usuário logado com sucesso:', auth.currentUser.email);
+            // Redirecione ou execute outras operações após o login bem-sucedido
+        } catch (error) {
+            console.error('Erro ao fazer login:', error);
+            // Trate especificamente o erro de email inválido
+            if (error.code === 'auth/invalid-email') {
+                alert('Endereço de email inválido. Verifique e tente novamente.');
+            } else {
+                alert('Ocorreu um erro ao fazer login. Por favor, tente novamente mais tarde.');
+            }
+        }
+    };
 
     return (
         <Wrapper>
@@ -101,4 +157,4 @@ export default function LoginCard() {
 
         </Wrapper>
     )
-}
+}}

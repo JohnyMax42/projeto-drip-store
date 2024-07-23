@@ -1,8 +1,10 @@
 import './ProductView.css'
-import ProductListing3 from "../components/ProductListing/ProductListing3"
-import styled from 'styled-components'
+import ProductListing from "../components/ProductListing/ProductListing"
 import React, { useState } from 'react';
 import Carrossel2 from "../components/Carrossel2"
+import Stars from "../assets/Stars.png"
+import Star1 from "../assets/Star1.png"
+import Seta from "../assets/arrow.png"
 
 export default function ProductViewPage() {
 
@@ -20,11 +22,11 @@ export default function ProductViewPage() {
     return (
         <>
             <div id='ProductViewPage'>
-                <div className='extrasPagina'>
+                <div id='extrasPagina'>
                     <p><strong>Home</strong> / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino</p>
                 </div>
-                
-                <div className='lateralidade'>
+
+                <div id='boxProdutos'>
 
                     <Carrossel2></Carrossel2>
 
@@ -32,8 +34,8 @@ export default function ProductViewPage() {
                         <h2>Tênis Nike Revolution 6 Next Nature Masculino</h2>
                         <p>Casual | Nike | REF:38416711</p>
                         <div className='lateralidade'>
-                            <img src="src/assets/Stars.png" alt="estrelas" />
-                            <p className='bg-warning paragrafo-estrela'>4.7{<img src='src/assets/star1.png' alt='estrela' />}</p>
+                            <img src={Stars} alt="estrelas" />
+                            <p className='bg-warning paragrafo-estrela text-white'>4.7{<img src={Star1} alt='estrela' />}</p>
                             <p>(90 avaliações)</p>
                         </div>
                         <h2>R$219,00</h2>
@@ -41,44 +43,44 @@ export default function ProductViewPage() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                         <p>Tamanho</p>
                         <div className='lateralidade'>
-                        <button
-                            className={selectedSize === '39' ? 'selected' : ''}
-                            onClick={() => handleSizeChange('39')}
-                        >39</button>
-                        <button
-                            className={selectedSize === '40' ? 'selected' : ''}
-                            onClick={() => handleSizeChange('40')}
-                        >40</button>
-                        <button
-                            className={selectedSize === '41' ? 'selected' : ''}
-                            onClick={() => handleSizeChange('41')}
-                        >41</button>
-                        <button
-                            className={selectedSize === '42' ? 'selected' : ''}
-                            onClick={() => handleSizeChange('42')}
-                        >42</button>
-                        <button
-                            className={selectedSize === '43' ? 'selected' : ''}
-                            onClick={() => handleSizeChange('43')}
-                        >43</button>
+                            <button
+                                className={selectedSize === '39' ? 'selected' : ''}
+                                onClick={() => handleSizeChange('39')}
+                            >39</button>
+                            <button
+                                className={selectedSize === '40' ? 'selected' : ''}
+                                onClick={() => handleSizeChange('40')}
+                            >40</button>
+                            <button
+                                className={selectedSize === '41' ? 'selected' : ''}
+                                onClick={() => handleSizeChange('41')}
+                            >41</button>
+                            <button
+                                className={selectedSize === '42' ? 'selected' : ''}
+                                onClick={() => handleSizeChange('42')}
+                            >42</button>
+                            <button
+                                className={selectedSize === '43' ? 'selected' : ''}
+                                onClick={() => handleSizeChange('43')}
+                            >43</button>
+                        </div>
+                        <p>Cor</p>
+                        <div className='lateralidade'>
+                            <input className="escolhacor" type="radio" name="corSapato" id="corAzul" />
+                            <input className="escolhacor" type="radio" name="corSapato" id="corvermelho" />
+                            <input className="escolhacor" type="radio" name="corSapato" id="corPreto" />
+                            <input className="escolhacor" type="radio" name="corSapato" id="corRoxo" />
+                        </div>
+                        <button className='bg-warning text-white'>COMPRAR</button>
                     </div>
-                    <p>Cor</p>
-                    <div className='lateralidade'>
-                        <input className = "escolhacor" type="radio" name="corSapato" id="corAzul" />
-                        <input className = "escolhacor" type="radio" name="corSapato" id="corvermelho" />
-                        <input className = "escolhacor" type="radio" name="corSapato" id="corPreto" />
-                        <input className = "escolhacor" type="radio" name="corSapato" id="corRoxo" />
-                    </div>
-                    <button className='bg-warning text-light'>COMPRAR</button>
-                </div>
                 </div>
 
-                <div className='extrasPagina'>
+                <div id='extrasPagina2'>
                     <p><strong>Produtos Relacionados</strong></p>
-                    <p>Ver todos{<img src='src/assets/arrow.png' alt='seta' />}</p>
+                    <p>Ver todos{<img src={Seta} alt='seta' />}</p>
                 </div>
 
-                <ProductListing3></ProductListing3>
+                <ProductListing num={4} />
 
             </div>
         </>

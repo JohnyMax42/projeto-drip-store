@@ -7,10 +7,10 @@ import ProductListing from "../../components/ProductListing/ProductListing"
 export default function HomePage() {
     return (
         <>
-            <Carrossel/>
+            <Carrossel />
             <Colecao1 />
             <Colecao2 />
-            <ProductListing></ProductListing>
+            <ProductListing num={8}></ProductListing>
             <Banner2 />
         </>
     )

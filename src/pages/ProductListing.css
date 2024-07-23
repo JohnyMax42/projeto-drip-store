@@ -76,6 +76,7 @@
     background-color: white;
     background-size: auto;
     border-radius: 4px;
+    
 }
 
 .inputFiltro[type="checkbox"]:checked::before{
@@ -88,6 +89,7 @@
     background-position-x: center;
     background-position-y: center;
     background-size: 13.5px 9px;
+    
 }
 
 .inputFiltro[type="radio"]::before{
