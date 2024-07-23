@@ -20,11 +20,11 @@ export default function ProductViewPage() {
     return (
         <>
             <div id='ProductViewPage'>
-                <div className='extrasPagina'>
+                <div id='extrasPagina'>
                     <p><strong>Home</strong> / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino</p>
                 </div>
                 
-                <div className='lateralidade'>
+                <div id = 'boxProdutos'>
 
                     <Carrossel2></Carrossel2>
 
@@ -33,7 +33,7 @@ export default function ProductViewPage() {
                         <p>Casual | Nike | REF:38416711</p>
                         <div className='lateralidade'>
                             <img src="src/assets/Stars.png" alt="estrelas" />
-                            <p className='bg-warning paragrafo-estrela'>4.7{<img src='src/assets/star1.png' alt='estrela' />}</p>
+                            <p className='bg-warning paragrafo-estrela text-white'>4.7{<img src='src/assets/star1.png' alt='estrela' />}</p>
                             <p>(90 avaliações)</p>
                         </div>
                         <h2>R$219,00</h2>
@@ -69,11 +69,11 @@ export default function ProductViewPage() {
                         <input className = "escolhacor" type="radio" name="corSapato" id="corPreto" />
                         <input className = "escolhacor" type="radio" name="corSapato" id="corRoxo" />
                     </div>
-                    <button className='bg-warning text-light'>COMPRAR</button>
+                    <button className='bg-warning text-white'>COMPRAR</button>
                 </div>
                 </div>
 
-                <div className='extrasPagina'>
+                <div id='extrasPagina2'>
                     <p><strong>Produtos Relacionados</strong></p>
                     <p>Ver todos{<img src='src/assets/arrow.png' alt='seta' />}</p>
                 </div>
