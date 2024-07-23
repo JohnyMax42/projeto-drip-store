@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import MyContext from '../MyContext';
 import ProductCard from "../ProductCard/ProductCard";
 import styled from "styled-components";
-import Cores from "../Cores";
 
 const Wrapper = styled.div`
-
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -12,7 +11,8 @@ const Wrapper = styled.div`
     padding-right: 35px;
 `;
 
-export default function ProductListing() {
+export default function ProductListing({ num = 4 }) {
+    const sharedValue = useContext(MyContext);
     const [dadosAPI, setDadosAPI] = useState(null);
     const [loading, setLoading] = useState(true);
 
@@ -32,57 +32,10 @@ export default function ProductListing() {
         fetchData();
     }, []);
 
-    const products = [
-        {
-            name: "K-Swiss V8 - Masculino",
-            image: "src/assets/CardShoes.png",
-            price: 200,
-            priceDiscount: 149
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            image: "src/assets/CardShoes.png",
-            price: 49.9
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            image: "src/assets/CardShoes.png",
-            price: 200,
-            priceDiscount: 149.9
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            image: "src/assets/CardShoes.png",
-            price: 200,
-            priceDiscount: 149.9
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            image: "src/assets/CardShoes.png",
-            price: 200,
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            image: "src/assets/CardShoes.png",
-            price: 200,
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            image: "src/assets/CardShoes.png",
-            price: 200,
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            image: "src/assets/CardShoes.png",
-            price: 200,
-        },
-
-    ];
-
     return (
         <>
             <Wrapper>
-                {products.map((product, index) => (
+                {sharedValue.slice(0, num).map((product, index) => (
                     <ProductCard
                         key={index}
                         name={product.name}

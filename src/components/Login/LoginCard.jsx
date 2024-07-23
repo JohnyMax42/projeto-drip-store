@@ -4,6 +4,38 @@ import { styled } from "styled-components"
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
+export default function LoginCard() {
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyAOuprveLnjUp7UHM_QuqG1b3z1OjMy9R8",
+        authDomain: "tutorialff-f3880.firebaseapp.com",
+        projectId: "tutorialff-f3880",
+        storageBucket: "tutorialff-f3880.appspot.com",
+        messagingSenderId: "1055193701629",
+        appId: "1:1055193701629:web:0dd03008f5149666817294"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    const [email, setEmail] = useState('');
+
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value);
+    }
+    const handleGmailLogin = async () => {
+        try {
+            const auth = getAuth();
+            const email = setEmail; // Pode ser um input do usuário
+            const senha = 'sua-senha'; // Pode ser um input do usuário
+
+            await signInWithEmailAndPassword(auth, email, senha);
+            // Autenticação bem-sucedida! Redirecione o usuário para a página principal.
+        } catch (error) {
+            console.error('Erro ao fazer login:', error);
+        }
+    };
+
 const Wrapper = styled.div`
         display: grid;
         flex-flow: column wrap;
@@ -17,11 +49,11 @@ const Wrapper = styled.div`
         border-radius: 7px;
     `
 
-const WrapperTitulo = styled.div`
+    const WrapperTitulo = styled.div`
         font-weight: 700;
     `
 
-const InputLogin = styled.input`
+    const InputLogin = styled.input`
         color: black;
         width: 100%;
         height: 60px;
@@ -31,11 +63,11 @@ const InputLogin = styled.input`
         background-color: rgba(71, 71, 71, 0.04);
     `
 
-const WrapperDados = styled.div`
+    const WrapperDados = styled.div`
         font-weight: 700;
     `
 
-const BotaoAcessar = styled.button`
+    const BotaoAcessar = styled.button`
         width: 100%;
         height: 48px;
         margin-top: 20px;
@@ -109,33 +141,20 @@ export default function LoginCard() {
             </WrapperTitulo>
 
 
-            <form onSubmit={handleLogin}>
+            <form action="post">
                 <WrapperDados>
-                    <label htmlFor="emailInput" style={{ paddingBottom: '5px' }}>Email *</label>
-                    <InputLogin
-                        id="emailInput"
-                        placeholder="Insira seu email"
-                        type="text"
-                        value={email}
-                        onChange={handleEmailChange}
-                    />
-                    <label htmlFor="senhaInput" style={{ paddingTop: '20px', paddingBottom: '5px' }}>Senha *</label>
-                    <InputLogin
-                        id="senhaInput"
-                        placeholder="Insira sua senha"
-                        type="password"
-                        value={senha}
-                        onChange={handleSenhaChange}
-                    />
+                    <label htmlFor="" style={{ paddingBottom: '5px' }}>Login *</label>
+                    <InputLogin placeholder="Insira seu login ou email" type="email" onChange={handleEmailChange} value={email} />
+                    <label htmlFor="" style={{ paddingTop: '20px', paddingBottom: '5px' }}>Senha *</label>
+                    <InputLogin placeholder="Insira sua senha" type="password" />
                     <a href="">Esqueci minha senha</a>
-                    <BotaoAcessar>Acessar Conta</BotaoAcessar>
                 </WrapperDados>
-
+                <BotaoAcessar>Acessar Conta</BotaoAcessar>
                 <p>Ou faça login com:
-                    <img src={Gmail} alt="gmail" />
+                    <img src={Gmail} alt="gmail" onClick={handleGmailLogin} />
                 </p>
             </form>
 
         </Wrapper>
     )
-}
+}}

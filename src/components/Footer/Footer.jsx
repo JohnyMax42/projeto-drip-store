@@ -42,8 +42,8 @@ const InformationComponent = ({ title, informations }) => {
 
 
 export default function Footer() {
-    let facelink = "https://www.instagram.com/digitalcollegebr/"
-    let Instalink = "https://web.facebook.com/digitalcollegebr/"
+    let facelink = "https://web.facebook.com/digitalcollegebr/"
+    let Instalink = "https://www.instagram.com/digitalcollegebr/"
     let xlink = "https://x.com/eaicollegers"
     return (
         <>
@@ -52,9 +52,9 @@ export default function Footer() {
                     <img id="logoFooter" src={logo2} alt="logo2" />
                     <p id='textoFooter'>Lorem ipsum dolor sit amet, consectetur adipisicing ept. Quam blanditiis apas unde neque, minima architecto dolores dolorem?</p>
                     <div className="redesSociais">
-                        <a href={facelink} target="_blank"><img src={Face} alt="Facebook" /></a>
-                        <a href={Instalink} target="_blank" style={{ paddingRight: "15px", paddingLeft: 15 }}><img src={Instagram} alt="Instagram" /></a>
-                        <a href={xlink} target="_blank"><img src={X} alt="X" /></a>
+                        <a href={facelink} target="_blank" title='Facebook'><img src={Face} alt="Facebook" /></a>
+                        <a href={Instalink} target="_blank" title='Instagram' style={{ paddingRight: 35, paddingLeft: 35 }}><img src={Instagram} alt="Instagram" /></a>
+                        <a href={xlink} target="_blank" title='X'><img src={X} alt="X" /></a>
                     </div>
                 </div>
 
