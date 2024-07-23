@@ -3,6 +3,7 @@ import styled from "styled-components";
 import LoginCard from "../../components/Login/LoginCard";
 
 export default function LoginPage() {
+
     const Container = styled.div`
         width: 1440px;
         height: 90vh;
