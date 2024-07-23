@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Layout from './pages/Layout'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LoginCard from './components/Login/LoginCard';
 
 
 function App() {
@@ -10,7 +11,6 @@ function App() {
     <>
 
       <Layout style={{ backgroundColor: '#CCCCCC' }}></Layout>
-
 
     </>
   )
