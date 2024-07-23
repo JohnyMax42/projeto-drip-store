@@ -126,3 +126,11 @@ button:focus-visible {
   border-bottom: 4px solid var(--cor-primary);
   border-radius: 1.5px;
 }
+
+.Link {
+  color: var(--dark-gray-2);
+}
+
+.Link:hover {
+  color: var(--cor-primary);
+}

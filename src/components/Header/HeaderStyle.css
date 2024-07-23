@@ -19,6 +19,7 @@
     /* align-items: center; */
     width: 1440px;
     margin: 0px;
+    object-fit: contain;
 }
 
 #logo {
@@ -37,6 +38,7 @@
     border: 0px;
     border-radius: 8px 0px 0px 8px;
     background-color: rgba(71, 71, 71, 0.04);
+    padding-inline-start: 25px;
 }
 
 #botaoLupa {

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Cores from "../Cores";
-import Line from "../../assets/Line.png"
+import { Link } from 'react-router-dom'
 
 const Container = styled.div`
     position: relative;
@@ -68,24 +68,26 @@ const DescontoCard = styled.p`
 
 export default function ProductCard({ imagem, name, price = 0, priceDiscount = 0 }) {
     return (
-        <Container>
-            <Imagem src={imagem} alt={name} />
-            {priceDiscount ? (
-                <>
-                    <DescontoCard>30% OFF</DescontoCard>
-                </>
-            ) : null}
-            <NomeProduto>{name}</NomeProduto>
-            <ContainerTexto>
+        <Link to={'/ProductViewPage/1'} className="Link">
+            <Container>
+                <Imagem src={imagem} alt={name} />
                 {priceDiscount ? (
                     <>
-                        <PrecoDesconto className={"teste-paragrafo"} style={{ paddingRight: "15px" }}>${price}</PrecoDesconto>
-                        <Preco>${priceDiscount}</Preco>
+                        <DescontoCard>30% OFF</DescontoCard>
                     </>
-                ) : (
-                    <Preco>${price}</Preco>
-                )}
-            </ContainerTexto>
-        </Container >
+                ) : null}
+                <NomeProduto>{name}</NomeProduto>
+                <ContainerTexto>
+                    {priceDiscount ? (
+                        <>
+                            <PrecoDesconto className={"teste-paragrafo"} style={{ paddingRight: "15px" }}>${price}</PrecoDesconto>
+                            <Preco>${priceDiscount}</Preco>
+                        </>
+                    ) : (
+                        <Preco>${price}</Preco>
+                    )}
+                </ContainerTexto>
+            </Container >
+        </Link>
     );
 }
