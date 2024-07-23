@@ -66,7 +66,7 @@ export default function LoginCard() {
     const WrapperDados = styled.div`
         font-weight: 700;
     `
-
+    
     const BotaoAcessar = styled.button`
         width: 100%;
         height: 48px;
