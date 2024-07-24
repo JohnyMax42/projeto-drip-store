@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import MyContext from '../MyContext';
 import ProductCard from "../ProductCard/ProductCard";
 import styled from "styled-components";
+import Shoes from "../../assets/CardShoes.png"
 
 const Wrapper = styled.div`
     display: flex;
@@ -10,6 +11,53 @@ const Wrapper = styled.div`
     padding-left: 35px;
     padding-right: 35px;
 `;
+
+const Dados = [
+    {
+        name: "K-Swiss V8 - Masculino",
+        image: Shoes,
+        price: 200,
+        priceDiscount: 149
+    },
+    {
+        name: "K-Swiss V8 - Masculino",
+        image: Shoes,
+        price: 49.9
+    },
+    {
+        name: "K-Swiss V8 - Masculino",
+        image: Shoes,
+        price: 200,
+        priceDiscount: 149.9
+    },
+    {
+        name: "K-Swiss V8 - Masculino",
+        image: Shoes,
+        price: 200,
+        priceDiscount: 149.9
+    },
+    {
+        name: "K-Swiss V8 - Masculino",
+        image: Shoes,
+        price: 200,
+    },
+    {
+        name: "K-Swiss V8 - Masculino",
+        image: Shoes,
+        price: 200,
+    },
+    {
+        name: "K-Swiss V8 - Masculino",
+        image: Shoes,
+        price: 200,
+    },
+    {
+        name: "K-Swiss V8 - Masculino",
+        image: Shoes,
+        price: 200,
+    },
+
+];
 
 export default function ProductListing({ num = 4 }) {
     const sharedValue = useContext(MyContext);
@@ -35,7 +83,7 @@ export default function ProductListing({ num = 4 }) {
     return (
         <>
             <Wrapper>
-                {sharedValue.slice(0, num).map((product, index) => (
+                {Dados.slice(0, num).map((product, index) => (
                     <ProductCard
                         key={index}
                         name={product.name}

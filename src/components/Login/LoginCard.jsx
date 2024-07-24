@@ -4,37 +4,26 @@ import { styled } from "styled-components"
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
-export default function LoginCard() {
+// Initialize Firebase
+// const app = initializeApp(firebaseConfig);
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyAOuprveLnjUp7UHM_QuqG1b3z1OjMy9R8",
-        authDomain: "tutorialff-f3880.firebaseapp.com",
-        projectId: "tutorialff-f3880",
-        storageBucket: "tutorialff-f3880.appspot.com",
-        messagingSenderId: "1055193701629",
-        appId: "1:1055193701629:web:0dd03008f5149666817294"
-    };
+// const [email, setEmail] = useState('');
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
+// const handleEmailChange = (event) => {
+//     setEmail(event.target.value);
+// }
+// const handleGmailLogin = async () => {
+//     try {
+//         const auth = getAuth();
+//         const email = setEmail; // Pode ser um input do usuário
+//         const senha = 'sua-senha'; // Pode ser um input do usuário
 
-    const [email, setEmail] = useState('');
-
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value);
-    }
-    const handleGmailLogin = async () => {
-        try {
-            const auth = getAuth();
-            const email = setEmail; // Pode ser um input do usuário
-            const senha = 'sua-senha'; // Pode ser um input do usuário
-
-            await signInWithEmailAndPassword(auth, email, senha);
-            // Autenticação bem-sucedida! Redirecione o usuário para a página principal.
-        } catch (error) {
-            console.error('Erro ao fazer login:', error);
-        }
-    };
+//         await signInWithEmailAndPassword(auth, email, senha);
+//         // Autenticação bem-sucedida! Redirecione o usuário para a página principal.
+//     } catch (error) {
+//         console.error('Erro ao fazer login:', error);
+//     }
+// };
 
 const Wrapper = styled.div`
         display: grid;
@@ -49,11 +38,11 @@ const Wrapper = styled.div`
         border-radius: 7px;
     `
 
-    const WrapperTitulo = styled.div`
+const WrapperTitulo = styled.div`
         font-weight: 700;
     `
 
-    const InputLogin = styled.input`
+const InputLogin = styled.input`
         color: black;
         width: 100%;
         height: 60px;
@@ -63,11 +52,11 @@ const Wrapper = styled.div`
         background-color: rgba(71, 71, 71, 0.04);
     `
 
-    const WrapperDados = styled.div`
+const WrapperDados = styled.div`
         font-weight: 700;
     `
 
-    const BotaoAcessar = styled.button`
+const BotaoAcessar = styled.button`
         width: 100%;
         height: 48px;
         margin-top: 20px;
@@ -157,4 +146,4 @@ export default function LoginCard() {
 
         </Wrapper>
     )
-}}
+}
