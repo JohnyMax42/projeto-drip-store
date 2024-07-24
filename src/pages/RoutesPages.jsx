@@ -4,6 +4,8 @@ import HomePage from "./HomePage/HomePage";
 import ProductListingPage from "./ProductListingPage";
 import ProductViewPage from "./ProductViewPage";
 import LoginPage from "./Login/LoginPage";
+import MyContext from "../components/MyContext";
+import Shoes from "./../assets/CardShoes.png"
 
 export default function RoutesPages() {
     const [dadosAPI, setDadosAPI] = useState(null);
@@ -17,23 +19,25 @@ export default function RoutesPages() {
                 setDadosAPI(data);
                 setLoading(false);
 
-                // Adicione um console.log para verificar os dados recebidos
                 // console.log('Dados da API:', data);
             } catch (error) {
-                // console.error('Erro ao buscar dados da API:', error);
+                console.error('Erro ao buscar dados da API:', error);
                 setLoading(false);
             }
         };
 
-        fetchData();
+        fetchData()
     }, []);
 
     return (
-        <Routes>
-            <Route path='/' element={<HomePage />} exact />
-            <Route path='/ProductListingPage' element={<ProductListingPage />} />
-            <Route path='/ProductViewPage' element={<ProductViewPage />} />
-            <Route path='/Login' element={<LoginPage />} />
-        </Routes>
+        <MyContext.Provider value={dadosAPI}>
+            <Routes>
+                <Route path='/' element={<HomePage />} exact />
+                <Route path='/ProductListingPage' element={<ProductListingPage />} />
+                <Route path='/ProductViewPage' element={<ProductViewPage />} />
+                <Route path='/Login' element={<LoginPage />} />
+                <Route path='/ProductViewPage/:id' element={<ProductViewPage />} />
+            </Routes>
+        </MyContext.Provider>
     )
 }
