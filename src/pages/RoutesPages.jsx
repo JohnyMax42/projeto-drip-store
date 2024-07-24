@@ -5,6 +5,7 @@ import ProductListingPage from "./ProductListingPage";
 import ProductViewPage from "./ProductViewPage";
 import LoginPage from "./Login/LoginPage";
 import MyContext from "../components/MyContext";
+import CadastroPage from "./Cadastro/CadastroPage";
 
 export default function RoutesPages() {
     const [dadosAPI, setDadosAPI] = useState(null);
@@ -36,6 +37,7 @@ export default function RoutesPages() {
                 <Route path='/ProductViewPage' element={<ProductViewPage />} />
                 <Route path='/Login' element={<LoginPage />} />
                 <Route path='/ProductViewPage/:id' element={<ProductViewPage />} />
+                <Route path='/Cadastro' element={<CadastroPage />} />
             </Routes>
         </MyContext.Provider>
     )

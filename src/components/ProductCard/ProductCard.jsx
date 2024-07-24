@@ -32,11 +32,13 @@ const Imagem = styled.img`
 
 const NomeProduto = styled.div`
     text-align: left;
-    font-size: 24px;
+    font-size: 23px;
     margin-top: 10px;
     font-weight: 400;
-    overflow: hidden; /* Esconde o texto que excede o espaço disponível */
-    white-space: nowrap; 
+    max-width: 100%;
+    overflow: hidden; 
+    word-wrap: break-word;
+    
 `;
 
 const Preco = styled.div`    
