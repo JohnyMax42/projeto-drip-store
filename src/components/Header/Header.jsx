@@ -21,7 +21,7 @@ export default function Header() {
                 </Link>
                 <input id="barraPesquisa" type="text" placeholder="Pesquisar produto..." />
                 <input id="botaoLupa" type="button" value='' />
-                <Link to = {'/Cadastro'} id="cadastro" className="links" href="#cadastro">Cadastre-se</Link>
+                <a id="cadastro" className="links" href="#cadastro">Cadastre-se</a>
                 <Link to={'/Login'}><input id="botaoEntrar" type="button" value="Entrar" /></Link>
                 <CarrinhoCompras></CarrinhoCompras>
                 {/* <a id="iconeCarrinho" href="#carrinho">
