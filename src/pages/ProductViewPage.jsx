@@ -39,7 +39,7 @@ export default function ProductViewPage() {
                             <p>(90 avaliações)</p>
                         </div>
                         <h2>R$219,00</h2>
-                        <p>descrição do produto</p>
+                        <p className='DescricaoProd'>Descrição do produto</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                         <p>Tamanho</p>
                         <div className='lateralidade'>
