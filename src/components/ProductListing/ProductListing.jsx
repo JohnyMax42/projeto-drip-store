@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import MyContext from '../MyContext';
 import ProductCard from "../ProductCard/ProductCard";
 import styled from "styled-components";
+import Shoes from "../../assets/CardShoes.png"
 
 const Wrapper = styled.div`
     display: flex;
@@ -22,7 +23,7 @@ export default function ProductListing({ num = 1 }) {
                         <ProductCard
                             key={index}
                             name={product.nome}
-                            imagem={product.imagem_url}
+                            imagem={(product.imagem_url ? product.imagem_url : Shoes)}
                             price={product.preco_original}
                             priceDiscount={product.preco_desconto}
                         />
