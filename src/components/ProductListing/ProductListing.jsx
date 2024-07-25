@@ -6,7 +6,7 @@ import Shoes from "../../assets/CardShoes.png"
 
 const Wrapper = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     padding-left: 35px;
     padding-right: 35px;

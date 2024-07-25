@@ -213,3 +213,27 @@ color: rgba(143, 143, 143, 1);
         white 100%
     )
 }
+
+.productlistpage3{
+    width: 1350px;
+    display: flex;   
+}
+
+.prodrelacionados{
+    font-family: Inter;
+    font-weight: bold;
+    font-weight: 700px;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.75px;
+    color: rgba(71, 71, 71, 1);
+}
+
+.vertodospage3{
+    font-family: Inter;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    color: rgba(201, 32, 113, 1);
+}

@@ -76,11 +76,13 @@ export default function ProductViewPage() {
                 </div>
 
                 <div id='extrasPagina2'>
-                    <p><strong>Produtos Relacionados</strong></p>
-                    <p>Ver todos{<img src={Seta} alt='seta' />}</p>
+                    <p className='prodrelacionados'>Produtos Relacionados</p>
+                    <p className='vertodospage3'>Ver todos   {<img src={Seta} alt='seta' />}</p>
                 </div>
 
-                <ProductListing num={4} />
+                <div className='productlistpage3'>
+                <ProductListing num={4}/>
+                </div> 
 
             </div>
         </>
