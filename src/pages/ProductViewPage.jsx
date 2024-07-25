@@ -31,47 +31,48 @@ export default function ProductViewPage() {
                     <Carrossel2></Carrossel2>
 
                     <div id="InfoSapato">
-                        <h2>Tênis Nike Revolution 6 Next Nature Masculino</h2>
+                        <p className='titulosapato'>Tênis Nike Revolution 6 Next Nature Masculino</p>
                         <p>Casual | Nike | REF:38416711</p>
                         <div className='lateralidade'>
                             <img src={Stars} alt="estrelas" />
                             <p className='bg-warning paragrafo-estrela text-white'>4.7{<img src={Star1} alt='estrela' />}</p>
-                            <p>(90 avaliações)</p>
+                            <p className='avaliacoes'>(90 avaliações)</p>
                         </div>
                         <h2>R$219,00</h2>
+                        
                         <p className='DescricaoProd'>Descrição do produto</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                        <p>Tamanho</p>
+                        <p className='textodescricao'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <p className='tamanhosapato'>Tamanho</p>
                         <div className='lateralidade'>
                             <button
                                 className={selectedSize === '39' ? 'selected' : ''}
-                                onClick={() => handleSizeChange('39')}
+                                onClick={() => handleSizeChange('39')} id='buton1'
                             >39</button>
                             <button
                                 className={selectedSize === '40' ? 'selected' : ''}
-                                onClick={() => handleSizeChange('40')}
+                                onClick={() => handleSizeChange('40')} id='buton2'
                             >40</button>
                             <button
                                 className={selectedSize === '41' ? 'selected' : ''}
-                                onClick={() => handleSizeChange('41')}
+                                onClick={() => handleSizeChange('41')}id='buton3'
                             >41</button>
                             <button
                                 className={selectedSize === '42' ? 'selected' : ''}
-                                onClick={() => handleSizeChange('42')}
+                                onClick={() => handleSizeChange('42')}id='buton4'
                             >42</button>
                             <button
                                 className={selectedSize === '43' ? 'selected' : ''}
-                                onClick={() => handleSizeChange('43')}
+                                onClick={() => handleSizeChange('43')}id='buton5'
                             >43</button>
                         </div>
-                        <p>Cor</p>
+                        <p className='corbuton'>Cor</p>
                         <div className='lateralidade'>
                             <input className="escolhacor" type="radio" name="corSapato" id="corAzul" />
                             <input className="escolhacor" type="radio" name="corSapato" id="corvermelho" />
                             <input className="escolhacor" type="radio" name="corSapato" id="corPreto" />
                             <input className="escolhacor" type="radio" name="corSapato" id="corRoxo" />
                         </div>
-                        <button className='bg-warning text-white w-50 mt-2'>COMPRAR</button>
+                        <button className='bg-warning text-white w-50 mt-4' id='butoncomprar'>COMPRAR</button>
                     </div>
                 </div>
 
