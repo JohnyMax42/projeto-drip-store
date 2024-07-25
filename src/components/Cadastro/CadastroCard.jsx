@@ -15,7 +15,8 @@ export default function CadastroCard() {
     text-align: left;
     padding: 30px;
     background-color: #FFFFFF;
-    border-radius: 7px;
+    border-radius: 4px;
+ ;
    
 `
     const WrapperTitulo = styled.div`

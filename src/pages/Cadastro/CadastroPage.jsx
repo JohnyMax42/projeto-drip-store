@@ -7,7 +7,7 @@ export default function CadastroPage() {
     const Container = styled.div`
         width: 1440px;
         height: 90vh;
-        background: linear-gradient(to bottom, #E5E5E5 0%, #EFEFFF 100%);
+        background: #F9F8FE;
         display: flex;
         flex-direction: column;
         justify-content: center;
