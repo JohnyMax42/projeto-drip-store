@@ -38,7 +38,11 @@ export default function ProductViewPage() {
                             <p className='bg-warning paragrafo-estrela text-white'>4.7{<img src={Star1} alt='estrela' />}</p>
                             <p className='avaliacoes'>(90 avaliações)</p>
                         </div>
-                        <h2>R$219,00</h2>
+                        <div className='precodesconto'>
+                        <h2 className='precoatual'>R$219,00</h2>
+                        <p className='precoantigo'> <s> $300,00 </s></p>
+                        </div>
+                        
                         
                         <p className='DescricaoProd'>Descrição do produto</p>
                         <p className='textodescricao'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>

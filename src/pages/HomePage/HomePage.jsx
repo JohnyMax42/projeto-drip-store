@@ -13,7 +13,7 @@ export default function HomePage() {
             <Colecao2 />
             <div id='extrasPagina2'>
                 <p className="strong">Produtos em alta</p>
-                <p>Ver todos{<img src={Seta} alt='seta' />}</p>
+                <p className="vertodoshomepage">Ver todos {<img src={Seta} alt='seta' />}</p>
             </div>
             <ProductListing num={8}></ProductListing>
             <Banner2 />

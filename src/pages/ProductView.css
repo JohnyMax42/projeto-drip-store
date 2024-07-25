@@ -344,3 +344,26 @@ color: rgba(143, 143, 143, 1);
     line-height: 36px;
     letter-spacing: 1px;
 }
+
+.precodesconto{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 70px;
+}
+
+.precoatual{
+    width: 89px;
+    height: 36px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.75;
+
+}
+.precoantigo{
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.75;
+color: rgba(204, 204, 204, 1);
+}

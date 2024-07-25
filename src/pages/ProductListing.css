@@ -119,3 +119,18 @@
         white 100%
     )
 }
+
+.strong{
+    margin-left: 100px;
+}
+
+.vertodoshomepage{
+    margin-right: 110px;
+    font-family: Inter;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    color: rgba(201, 32, 113, 1)
+
+}
