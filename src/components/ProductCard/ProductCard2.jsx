@@ -30,6 +30,7 @@ const Imagem = styled.img`
     height: 321px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     object-fit: contain;
+    background-color: #ffffff;
 `;
 
 const NomeProduto = styled.div`
