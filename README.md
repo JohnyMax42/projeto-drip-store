@@ -1,12 +1,6 @@
 # projeto-drip-store-johny
 
-Uma breve descrição do seu projeto.
-
-<!-- ## Funcionalidades
-
-- Funcionalidade 1
-- Funcionalidade 2
-- ... -->
+Projeto criado para mostrar o uso do react e seus componentes numa loja digital
 
 ## Integrantes 
 - Misael Fernandes Costa
