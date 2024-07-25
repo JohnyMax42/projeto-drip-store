@@ -4,27 +4,6 @@ import { styled } from "styled-components"
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
-// Initialize Firebase
-// const app = initializeApp(firebaseConfig);
-
-// const [email, setEmail] = useState('');
-
-// const handleEmailChange = (event) => {
-//     setEmail(event.target.value);
-// }
-// const handleGmailLogin = async () => {
-//     try {
-//         const auth = getAuth();
-//         const email = setEmail; // Pode ser um input do usuário
-//         const senha = 'sua-senha'; // Pode ser um input do usuário
-
-//         await signInWithEmailAndPassword(auth, email, senha);
-//         // Autenticação bem-sucedida! Redirecione o usuário para a página principal.
-//     } catch (error) {
-//         console.error('Erro ao fazer login:', error);
-//     }
-// };
-
 const Wrapper = styled.div`
         display: grid;
         flex-flow: column wrap;
@@ -130,17 +109,30 @@ export default function LoginCard() {
             </WrapperTitulo>
 
 
-            <form action="post">
+            <form onSubmit={handleLogin}>
                 <WrapperDados>
-                    <label htmlFor="" style={{ paddingBottom: '5px' }}>Login *</label>
-                    <InputLogin placeholder="Insira seu login ou email" type="email" onChange={handleEmailChange} value={email} />
-                    <label htmlFor="" style={{ paddingTop: '20px', paddingBottom: '5px' }}>Senha *</label>
-                    <InputLogin placeholder="Insira sua senha" type="password" />
+                    <label htmlFor="emailInput" style={{ paddingBottom: '5px' }}>Email *</label>
+                    <InputLogin
+                        id="emailInput"
+                        placeholder="Insira seu email"
+                        type="text"
+                        value={email}
+                        onChange={handleEmailChange}
+                    />
+                    <label htmlFor="senhaInput" style={{ paddingTop: '20px', paddingBottom: '5px' }}>Senha *</label>
+                    <InputLogin
+                        id="senhaInput"
+                        placeholder="Insira sua senha"
+                        type="password"
+                        value={senha}
+                        onChange={handleSenhaChange}
+                    />
                     <a href="">Esqueci minha senha</a>
+                    <BotaoAcessar>Acessar Conta</BotaoAcessar>
                 </WrapperDados>
-                <BotaoAcessar>Acessar Conta</BotaoAcessar>
+
                 <p>Ou faça login com:
-                    <img src={Gmail} alt="gmail" onClick={handleGmailLogin} />
+                    <img src={Gmail} alt="gmail" />
                 </p>
             </form>
 
