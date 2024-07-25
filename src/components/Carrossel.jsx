@@ -32,7 +32,7 @@ function Carrossel() {
       keyboard permite usar a setas do teclado para mudar o carrosel
       pause permite que ao colocar o mouse em cima do carrosel ele para
       slide travar o carrousel*/}
-      <Carousel variant="dark" fade controls keyboard={true} interval="1" pause="hover" slide={true} style={{ borderRadius: 4 }}>
+      <Carousel variant="dark" fade controls keyboard={true} pause="hover" slide={true} style={{ borderRadius: 4 }}>
         <Carousel.Item style={{ objectFit: 'contain' }}>
           <Banner />
           <Carousel.Caption>
