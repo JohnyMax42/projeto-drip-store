@@ -8,7 +8,7 @@ import { styled } from "styled-components";
 export default function Layout(){
      
     const BackgroundDiv = styled.div`
-    background: #F9F8FE;
+     background: #F9F8FE;
 
     `
     return (
