@@ -21,79 +21,91 @@ export default function ProductListing2() {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
-            priceDiscount: 149
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            image: "src/assets/CardShoes.png",
-            price: 49.9
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
-            priceDiscount: 149.9
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
-            priceDiscount: 149.9
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
+            priceDiscount: 100
         },
         {
             name: "K-Swiss V8 - Masculino",
             image: "src/assets/CardShoes.png",
             price: 200,
+            priceDiscount: 100
+        },
+        {
+            name: "K-Swiss V8 - Masculino",
+            image: "src/assets/CardShoes.png",
+            price: 200,
+            priceDiscount: 100
         },
     ];
 
