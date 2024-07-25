@@ -1,6 +1,5 @@
 import './HeaderStyle.css'
 import logo from '../../assets/logo.png'
-import CarrinhoCompras from '../CarrinhoCompras';
 import { Link } from 'react-router-dom'
 import React, { useState } from 'react';
 
@@ -23,10 +22,9 @@ export default function Header() {
                 <input id="botaoLupa" type="button" value='' />
                 <a id="cadastro" className="links" href="#cadastro">Cadastre-se</a>
                 <Link to={'/Login'}><input id="botaoEntrar" type="button" value="Entrar" /></Link>
-                <CarrinhoCompras></CarrinhoCompras>
-                {/* <a id="iconeCarrinho" href="#carrinho">
+                <a id="iconeCarrinho" href="#carrinho">
                     <div id='bolinhaCarrinho'>2</div>
-                </a> */}
+                </a>
                 
             </div>
             <div id="linksHeader">
