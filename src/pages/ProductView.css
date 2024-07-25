@@ -1,45 +1,51 @@
-#ProductViewPage{
+#ProductViewPage {
     padding: 20px 100px 127px 100px;
 }
 
-#extrasPagina{
+#extrasPagina {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#extrasPagina2{
+#extrasPagina2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 80px;
 }
 
-#boxProdutos{
+.strong {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+#boxProdutos {
     display: flex;
     flex-direction: row;
     gap: 40px;
 }
 
-#InfoSapato{
+#InfoSapato {
     width: 500px;
     height: 571;
     display: flex;
     flex-direction: column;
     text-align: left;
 }
-.DescricaoProd{
-font-family: Inter;
-font-weight: bold;
-font-weight: 700px;
-font-size: 14px;
-height: 22px;
-letter-spacing: 0.75px;
-color: rgba(143, 143, 143, 1);
+
+.DescricaoProd {
+    font-family: Inter;
+    font-weight: bold;
+    font-weight: 700px;
+    font-size: 14px;
+    height: 22px;
+    letter-spacing: 0.75px;
+    color: rgba(143, 143, 143, 1);
 
 }
 
-.lateralidade{
+.lateralidade {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -49,34 +55,35 @@ color: rgba(143, 143, 143, 1);
     color: rgba(143, 143, 143, 1);
 }
 
-.escolhacor[type="radio"]::before{
+.escolhacor[type="radio"]::before {
     content: "";
     display: inline-block;
     width: 39px;
     height: 39px;
     border: 3px;
-    border-color:  #e60909;
+    border-color: #e60909;
     background-color: rgb(77, 58, 58);
     background-size: auto;
 }
-.escolhacor[type="radio"]:checked::before{
+
+.escolhacor[type="radio"]:checked::before {
     content: "";
     display: inline-block;
     width: 39px;
     height: 39px;
     border: 3px;
     /* border-radius: 50%; */
-    border-color:  #1c8f14;
+    border-color: #1c8f14;
     background-size: auto;
 }
 
-.escolhacor{
+.escolhacor {
     width: 42px;
     height: 35px;
- 
+
 }
 
-#corAzul[type="radio"]::before{
+#corAzul[type="radio"]::before {
     content: "";
     display: inline-block;
     width: 42px;
@@ -85,32 +92,28 @@ color: rgba(143, 143, 143, 1);
     border-radius: 50%;
     background-color: rgba(111, 238, 255, 1);
     background-size: auto;
-    background: radial-gradient(
-        rgba(111, 238, 255, 1) 0%,
-        rgba(111, 238, 255, 1) 50%,
-        white 50%,
-        white 100%
-    )
-    
+    background: radial-gradient(rgba(111, 238, 255, 1) 0%,
+            rgba(111, 238, 255, 1) 50%,
+            white 50%,
+            white 100%)
 }
 
-#corAzul[type="radio"]:checked::before{
+#corAzul[type="radio"]:checked::before {
     content: "";
     display: inline-block;
     width: 42px;
     height: 42px;
     background-color: rgba(111, 238, 255, 1);
-    border: 3px solid  rgba(201, 32, 113, 1);
-    border-radius: 50%; /* Raio de curvatura */
-    background: radial-gradient(
-        rgba(111, 238, 255, 1) 0%,
-        rgba(111, 238, 255, 1) 60%,
-        white 60%,
-        white 100%
-    )
+    border: 3px solid rgba(201, 32, 113, 1);
+    border-radius: 50%;
+    /* Raio de curvatura */
+    background: radial-gradient(rgba(111, 238, 255, 1) 0%,
+            rgba(111, 238, 255, 1) 60%,
+            white 60%,
+            white 100%)
 }
 
-#corvermelho[type="radio"]::before{
+#corvermelho[type="radio"]::before {
     content: "";
     display: inline-block;
     width: 42px;
@@ -119,33 +122,29 @@ color: rgba(143, 143, 143, 1);
     border-radius: 50%;
     background-color: rgba(255, 105, 105, 1);
     background-size: auto;
-    background: radial-gradient(
-        rgba(255, 105, 105, 1) 0%,
-        rgba(255, 105, 105, 1) 50%,
-        white 50%,
-        white 100%
-    )
-    
+    background: radial-gradient(rgba(255, 105, 105, 1) 0%,
+            rgba(255, 105, 105, 1) 50%,
+            white 50%,
+            white 100%)
 }
 
-#corvermelho[type="radio"]:checked::before{
+#corvermelho[type="radio"]:checked::before {
     content: "";
     display: inline-block;
     width: 42px;
     height: 42px;
     background-color: rgba(255, 105, 105, 1);
-    border: 3px solid  rgba(201, 32, 113, 1);
-    border-radius: 50%; /* Raio de curvatura */
-    background: radial-gradient(
-        rgba(255, 105, 105, 1) 0%,
-        rgba(255, 105, 105, 1) 60%,
-        white 60%,
-        white 100%
-    )
+    border: 3px solid rgba(201, 32, 113, 1);
+    border-radius: 50%;
+    /* Raio de curvatura */
+    background: radial-gradient(rgba(255, 105, 105, 1) 0%,
+            rgba(255, 105, 105, 1) 60%,
+            white 60%,
+            white 100%)
 }
 
 
-#corPreto[type="radio"]::before{
+#corPreto[type="radio"]::before {
     content: "";
     display: inline-block;
     width: 42px;
@@ -154,33 +153,29 @@ color: rgba(143, 143, 143, 1);
     border-radius: 50%;
     background-color: rgba(94, 94, 94, 1);
     background-size: auto;
-    background: radial-gradient(
-        rgba(94, 94, 94, 1) 0%,
-        rgba(94, 94, 94, 1)50%,
-        white 50%,
-        white 100%
-    )
-    
+    background: radial-gradient(rgba(94, 94, 94, 1) 0%,
+            rgba(94, 94, 94, 1)50%,
+            white 50%,
+            white 100%)
 }
 
-#corPreto[type="radio"]:checked::before{
+#corPreto[type="radio"]:checked::before {
     content: "";
     display: inline-block;
     width: 42px;
     height: 42px;
     background-color: rgba(94, 94, 94, 1);
-    border: 3px solid  rgba(201, 32, 113, 1);
-    border-radius: 50%; /* Raio de curvatura */
-    background: radial-gradient(
-        rgba(94, 94, 94, 1) 0%,
-        rgba(94, 94, 94, 1) 60%,
-        white 60%,
-        white 100%
-    )
+    border: 3px solid rgba(201, 32, 113, 1);
+    border-radius: 50%;
+    /* Raio de curvatura */
+    background: radial-gradient(rgba(94, 94, 94, 1) 0%,
+            rgba(94, 94, 94, 1) 60%,
+            white 60%,
+            white 100%)
 }
 
 
-#corRoxo[type="radio"]::before{
+#corRoxo[type="radio"]::before {
     content: "";
     display: inline-block;
     width: 42px;
@@ -189,27 +184,23 @@ color: rgba(143, 143, 143, 1);
     border-radius: 50%;
     background-color: rgba(109, 112, 183, 1);
     background-size: auto;
-    background: radial-gradient(
-        rgba(109, 112, 183, 1) 0%,
-        rgba(109, 112, 183, 1)50%,
-        white 50%,
-        white 100%
-    )
-    
+    background: radial-gradient(rgba(109, 112, 183, 1) 0%,
+            rgba(109, 112, 183, 1)50%,
+            white 50%,
+            white 100%)
 }
 
-#corRoxo[type="radio"]:checked::before{
+#corRoxo[type="radio"]:checked::before {
     content: "";
     display: inline-block;
     width: 42px;
     height: 42px;
     background-color: rgba(109, 112, 183, 1);
-    border: 3px solid  rgba(201, 32, 113, 1);
-    border-radius: 50%; /* Raio de curvatura */
-    background: radial-gradient(
-        rgba(109, 112, 183, 1) 0%,
-        rgba(109, 112, 183, 1) 60%,
-        white 60%,
-        white 100%
-    )
+    border: 3px solid rgba(201, 32, 113, 1);
+    border-radius: 50%;
+    /* Raio de curvatura */
+    background: radial-gradient(rgba(109, 112, 183, 1) 0%,
+            rgba(109, 112, 183, 1) 60%,
+            white 60%,
+            white 100%)
 }
