@@ -12,6 +12,7 @@
     width: 1440px;
     height: 192px;
     margin: 0px;
+    background-color: #ffffff;
 }
 
 #cabecalho {
@@ -133,3 +134,4 @@
     border-bottom: 4px solid var(--cor-primary);
     border-radius: 1.5px;
 }
+
