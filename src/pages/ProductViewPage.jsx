@@ -50,19 +50,19 @@ export default function ProductViewPage() {
                             >39</button>
                             <button
                                 className={selectedSize === '40' ? 'selected' : ''}
-                                onClick={() => handleSizeChange('40')} id='buton2'
+                                onClick={() => handleSizeChange('40')} id='buton1'
                             >40</button>
                             <button
                                 className={selectedSize === '41' ? 'selected' : ''}
-                                onClick={() => handleSizeChange('41')}id='buton3'
+                                onClick={() => handleSizeChange('41')}id='buton1'
                             >41</button>
                             <button
                                 className={selectedSize === '42' ? 'selected' : ''}
-                                onClick={() => handleSizeChange('42')}id='buton4'
+                                onClick={() => handleSizeChange('42')}id='buton1'
                             >42</button>
                             <button
                                 className={selectedSize === '43' ? 'selected' : ''}
-                                onClick={() => handleSizeChange('43')}id='buton5'
+                                onClick={() => handleSizeChange('43')}id='buton1'
                             >43</button>
                         </div>
                         <p className='corbuton'>Cor</p>

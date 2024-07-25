@@ -60,16 +60,20 @@
 #buton1{
     display: flex;
     justify-content: center;
-    color: rgba(71, 71, 71, 1);
-    background-color: white;
     border-color: rgba(204, 204, 204, 1);
     width: 48px;
     height: 48px;
     font-size: 16px;
     font-weight: 700;
     border-radius: 4px;
+    
 }
-#buton2{
+
+#button1.clicked{
+color: '#FFFFF','#4CAF50'; 
+background-color: '#FFFFF','#4CAF50';
+}
+/* #buton2{
     display: flex;
     justify-content: center;
     color: rgba(71, 71, 71, 1);
@@ -120,7 +124,7 @@
     font-size: 16px;
     font-weight: 700;
     border-radius: 4px;
-}
+} */
 
 
 .escolhacor[type="radio"]::before {
