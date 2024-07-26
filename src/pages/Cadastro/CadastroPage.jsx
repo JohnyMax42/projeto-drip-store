@@ -5,14 +5,15 @@ import CadastroCard from "../../components/Cadastro/CadastroCard";
 export default function CadastroPage() {
 
     const Container = styled.div`
-        width: 100%;
-        height: 90vh;
-        background: #F9F8FE;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 100px; `
+         flex: 1 0 auto;
+  width: 100%;
+  background: #F9F8FE;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px; 
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho total */`
 
     const BotaoAcessar = styled.button`
 width: 750px;

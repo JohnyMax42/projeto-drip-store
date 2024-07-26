@@ -6,17 +6,26 @@ import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 export default function CadastroCard() {
 
     const Wrapper = styled.div`
-    flex-flow: column nowrap;
-    justify-content: center;
-    width: 750px;
-    height: auto;
-    /* border: 1px solid; */
-    text-align: left;
-    align-items: center;
-    padding: 30px;
-    background-color: #FFFFFF;
-    border-radius: 4px;
-    padding:30px ;
+   display: grid;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 90vw; /* Usar largura relativa */
+  max-width: 750px; /* Máxima largura para evitar que fique muito grande */
+  height: auto;
+  text-align: left;
+  align-items: center;
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho total */
+
+  @media (max-width: 768px) {
+    width: 95vw; /* Ajuste para telas menores */
+    padding: 20px; /* Reduzir padding em telas menores */
+
+  }
+
+
  
    
 `
