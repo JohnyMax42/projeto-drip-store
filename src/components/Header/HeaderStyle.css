@@ -9,18 +9,25 @@
 }
 
 .caixaHeader {
-    width: 1440px;
+    min-width: 1440px;
+    width: auto;
     height: 192px;
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
+    align-items: center;
+}
+
+#caixaHeader2{
+    align-items: flex-start;
 }
 
 #cabecalho {
+    min-width: 1440px;
+    width: auto;
     display: flex;
-    /* align-items: center; */
-    width: 1440px;
-    margin: 0px;
-    object-fit: contain;
+    justify-content: center;
+    
 }
 
 #logo {
