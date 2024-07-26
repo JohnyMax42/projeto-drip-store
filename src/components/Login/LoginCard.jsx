@@ -151,8 +151,8 @@ export default function LoginCard() {
             </WrapperTitulo>
 
 
+            <ToastContainer />
             <form onSubmit={handleLogin}>
-                <ToastContainer />
                 <WrapperDados>
                     <label htmlFor="emailInput" style={{ paddingBottom: '5px' }}>Email *</label>
                     <InputLogin
@@ -174,8 +174,8 @@ export default function LoginCard() {
                     <BotaoAcessar>Acessar Conta</BotaoAcessar>
                 </WrapperDados>
 
-                <p>Ou faça login com:
-                    <img src={Gmail} alt="gmail" />
+                <p style={{ paddingTop: 10 }}>Ou faça login com:
+                    <img style={{ paddingLeft: 5 }} src={Gmail} alt="gmail" />
                 </p>
             </form>
 
