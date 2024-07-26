@@ -1,7 +1,9 @@
 import React from "react"
-import Cores from './Cores'
 import styled from "styled-components"
-import colecao from '../assets/colecao2.png'
+import Blusa from '../assets/Colecao/blusa.png'
+import Calca from '../assets/Colecao/calca.png'
+import Fone from '../assets/Colecao/fone.png'
+import Tenis from '../assets/Colecao/tenis.png'
 
 const Container = styled.div`
     display: flex;
@@ -19,6 +21,14 @@ const TextoColecao = styled.div`
     font-size: 24px;
 `;
 
+const WrapperImagens = styled.div`
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+`;
+
 export default function Colecao2() {
     return (
 
@@ -26,9 +36,28 @@ export default function Colecao2() {
             <TextoColecao as="h3">
                 Coleções em destaque
             </TextoColecao>
-            <div className="imagem-colecao">
-                <img src={colecao} alt="colecao1" width={600} />
-            </div>
+            <WrapperImagens>
+                <div className="imagem-colecao">
+                    <img src={Blusa} alt="Blusa" />
+                    <p>Camisetas</p>
+                </div>
+                <div className="imagem-colecao">
+                    <img src={Calca} alt="Calça" />
+                    <p>Calças</p>
+                </div>
+                <div className="imagem-colecao">
+                    <img src={Calca} alt="Bonés" />
+                    <p>Bonés</p>
+                </div>
+                <div className="imagem-colecao">
+                    <img src={Fone} alt="Headphones" />
+                    <p>Headphones</p>
+                </div>
+                <div className="imagem-colecao">
+                    <img src={Tenis} alt="Tênis" />
+                    <p>Tênis</p>
+                </div>
+            </WrapperImagens>
         </Container>
 
     )
