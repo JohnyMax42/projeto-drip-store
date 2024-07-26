@@ -20,12 +20,12 @@ function Carrossel2() {
 
   return (
     <div>
-      <Carousel variant="dark" fade controls keyboard={true} interval={null} pause="hover" slide={true} style={{ borderRadius: 4, width: 700.73, height: 571, display:'flex', alignItems:'center', backgroundColor: '#E2E3FF'}}>
+      <Carousel variant="dark" indicators={null} fade controls keyboard={true} interval={null} pause="hover" slide={true} style={{ borderRadius: 4, width: 700.73, height: 571, display: 'flex', alignItems: 'center', backgroundColor: '#E2E3FF' }}>
 
         {images.map((image, index) => (
           <Carousel.Item key={index}>
-            <img className="" src={image.src} alt={image.alt}/>
-            <Carousel.Caption></Carousel.Caption>      
+            <img className="" src={image.src} alt={image.alt} />
+            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
         ))}
 
