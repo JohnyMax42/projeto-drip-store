@@ -19,16 +19,6 @@ const TextoColecao = styled.div`
     font-size: 24px;
 `;
 
-// const Imgs = styled.img`
-// width: 64px;
-// height: 64px
-// `;
-
-// const TituloColecao = styled.h3`
-//     font-weight: 700;
-//     font-size: 24px;
-// `;
-
 export default function Colecao2() {
     return (
 

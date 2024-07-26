@@ -16,7 +16,7 @@ margin-top: 123px;
 const EmAlta2 = styled.div`
 display: flex;
 min-width: 1240px;
-width: 60%;
+width: 75%;
 justify-content: space-between;
 `
 
@@ -28,7 +28,7 @@ display: flex;
 
 export default function HomePage() {
     return (
-        <> 
+        <>
             <Carrossel />
             <Colecao1 />
             <Colecao2 />
