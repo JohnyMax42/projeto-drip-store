@@ -134,3 +134,32 @@ button:focus-visible {
 .Link:hover {
   color: var(--cor-primary);
 }
+
+
+
+.Sub2{
+  display: flex;
+  font-weight: 700;
+  margin-bottom: 22px;
+  flex-flow: column wrap;
+  text-align: left;
+
+
+
+
+}
+
+.CadastroTitulo{
+width: 440px;
+height: 36px;
+top: 150px;
+font-size: 32px;
+font-weight: 700;
+line-height: 36px;
+text-align: left;
+
+
+
+
+
+}
