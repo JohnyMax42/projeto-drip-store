@@ -1,6 +1,6 @@
 import './ProductListing.css'
 import FilterGroup from '../components/FilterGroup/FilterGroup'
-import ProductListing2 from '../components/ProductListing/ProductListing2'
+import ProductListing from '../components/ProductListing/ProductListing'
 
 export default function ProductListingPage() {
 
@@ -36,7 +36,7 @@ export default function ProductListingPage() {
                     <FilterGroup title='Gênero' inputType='checkbox' option='gênero' />
                     <FilterGroup title='Estado' inputType='radio' option='estado' />
                 </div>
-                <ProductListing2></ProductListing2>
+                <div id='caixaListaCards'><ProductListing num={15}></ProductListing></div>
             </div>
         </div>
     )

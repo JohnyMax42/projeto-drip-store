@@ -87,7 +87,7 @@ export default function ProductViewPage() {
 
                 <div className='productlistpage3'>
                 <ProductListing num={4}/>
-                </div> 
+                </div>
 
             </div>
         </>
