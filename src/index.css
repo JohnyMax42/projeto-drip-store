@@ -180,3 +180,12 @@ button:focus-visible {
   cursor: pointer;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 }
+
+.containerCadastro {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.containerCadastro p {
+  padding-left: 10px;
+}
