@@ -76,7 +76,7 @@ export default function ProductViewPage() {
                             <input className="escolhacor" type="radio" name="corSapato" id="corPreto" />
                             <input className="escolhacor" type="radio" name="corSapato" id="corRoxo" />
                         </div>
-                        <button className='bg-warning text-white w-50 mt-4' id='butoncomprar'>COMPRAR</button>
+                        <button className='butoncomprar'>COMPRAR</button>
                     </div>
                 </div>
 
