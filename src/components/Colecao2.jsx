@@ -11,6 +11,7 @@ const Container = styled.div`
     min-width: 712px;
     min-height: 196px;
     padding: 10px;
+    margin-top: 50px;
 `;
 
 const TextoColecao = styled.div`

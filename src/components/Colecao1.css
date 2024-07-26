@@ -1,4 +1,17 @@
- .Colecao1 {
+#colecaoPosicao1{
+   display: flex;
+   justify-content: center;
+   margin-top: 38px;
+}
+
+#colecaoPosicao2{
+   width: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: first baseline;
+}
+
+.Colecao1 {
     display: flex;
     flex-direction: column;
      width: 100%;

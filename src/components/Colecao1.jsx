@@ -8,71 +8,66 @@ export default function Colecao1() {
     return (
         
         <>
-        <p className="textoColection">Coleções em destaque</p>
 
-<div className="Cardexterno">
+        <div id='colecaoPosicao1'>
+        <div id='colecaoPosicao2'>
+            
+            <p className="textoColection">Coleções em destaque</p>
 
-<div className="CardColecao">   
-<div className="Colecao1">
-            <div className="colecao-container1">
+            <div className="Cardexterno">
 
-                <div className="texto">
-                    <p className="texto30off">30% OFF</p>
-                    <p className="textoNovoDrop">Novo Drop Supreme</p>
-                    <input className="butomColecoes" id="" type="button" value="Comprar" />
-                </div>
-                <div>
+                <div className="CardColecao">   
+                    <div className="Colecao1">
+                        <div className="colecao-container1">
 
-                    <img className="image1colecao1" src={Camisa} alt="camisa" />
+                            <div className="texto">
+                                <p className="texto30off">30% OFF</p>
+                                <p className="textoNovoDrop">Novo Drop Supreme</p>
+                                <input className="butomColecoes" id="" type="button" value="Comprar" />
+                            </div>
 
-                </div>
+                            <div>
+                                <img className="image1colecao1" src={Camisa} alt="camisa" />
+                            </div>
 
-            </div>
+                        </div>
 
-        </div>
+                    </div>
         <div className="Colecao1">
             <div className="colecao-container1">
 
-                <div className="texto">
-                    <p className="texto30off">30% OFF</p>
-                    <p className="textoNovoDrop">Coleção Adidas</p>
-                    <input className="butomColecoes" id="" type="button" value="Comprar" />
+                    <div className="texto">
+                        <p className="texto30off">30% OFF</p>
+                        <p className="textoNovoDrop">Coleção Adidas</p>
+                        <input className="butomColecoes" id="" type="button" value="Comprar" />
+                    </div>
+                        <div>
+                            <img className="image1colecao1" src={Tennis} alt="Tennis" />
+                        </div>
+
+                    </div>
+
                 </div>
-                <div>
 
-                    <img className="image1colecao1" src={Tennis} alt="Tennis" />
+                <div className="Colecao1">
+                <div className="colecao-container1">
+
+                    <div className="texto">
+                        <p className="texto30off">30% OFF</p>
+                        <p className="textoNovoDrop" id="beatsbass">Novo Beats Bass</p>
+                        <input className="butomColecoes" id="" type="button" value="Comprar" />
+                    </div>
+
+                    <div>
+                        <img className="image1colecao1" src={Fone} alt="Headset" />
+                    </div>
 
                 </div>
-
+                </div>
             </div>
-
         </div>
-        <div className="Colecao1">
-            <div className="colecao-container1">
-
-                <div className="texto">
-                    <p className="texto30off">30% OFF</p>
-                    <p className="textoNovoDrop" id="beatsbass">Novo Beats Bass</p>
-                    <input className="butomColecoes" id="" type="button" value="Comprar" />
-                </div>
-                <div>
-
-                    <img className="image1colecao1" src={Fone} alt="Headset" />
-
-                </div>
-
-            </div>
-
-        </div>
-
-        </div>
-        
-
-</div>
-       
-
-
-
+    </div>
+    </div>
         </>
 
     )
