@@ -10,7 +10,7 @@
    width: 60%;
    display: flex;
    flex-direction: column;
-   align-items: first baseline;
+   align-items: center;
 }
 
 .Colecao1 {
