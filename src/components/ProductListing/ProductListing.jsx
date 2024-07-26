@@ -9,8 +9,9 @@ const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 35px;
-    padding-right: 35px;
+    /* Retirado apos ajuste geral nas widths */
+    /* padding-left: 35px;
+    padding-right: 35px; */
 `;
 
 export default function ProductListing({ num = 1 }) {
