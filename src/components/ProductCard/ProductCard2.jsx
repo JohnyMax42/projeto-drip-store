@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Cores from "../Cores";
-import Line from "../../assets/Line.png"
 
 const Container = styled.div`
     position: relative;
@@ -82,7 +81,7 @@ export default function ProductCard2({ imagem, name, price = 0, priceDiscount = 
             <ContainerTexto>
                 {priceDiscount ? (
                     <>
-                        <PrecoDesconto className={"teste-paragrafo"} style={{ paddingRight: "15px" }}>${price}</PrecoDesconto>
+                        <PrecoDesconto className={"paragrafo-card"} style={{ paddingRight: "15px" }}>${price}</PrecoDesconto>
                         <Preco>${priceDiscount}</Preco>
                     </>
                 ) : (

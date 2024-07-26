@@ -83,7 +83,7 @@ export default function ProductCard({ imagem, name, price = 0, priceDiscount = 0
                 <ContainerTexto>
                     {priceDiscount ? (
                         <>
-                            <PrecoDesconto className={"teste-paragrafo"} style={{ paddingRight: "15px" }}>${price}</PrecoDesconto>
+                            <PrecoDesconto className={"paragrafo-card"} style={{ paddingRight: "15px" }}>${price}</PrecoDesconto>
                             <Preco>${priceDiscount}</Preco>
                         </>
                     ) : (

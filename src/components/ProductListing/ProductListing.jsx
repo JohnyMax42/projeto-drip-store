@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import MyContext from '../MyContext';
 import ProductCard from "../ProductCard/ProductCard";
 import styled from "styled-components";
 import Shoes from "../../assets/CardShoes.png"
+import products from "../Products";
 
 const Wrapper = styled.div`
     display: flex;
@@ -29,13 +30,15 @@ export default function ProductListing({ num = 1 }) {
                         />
                     ))
                 ) : (
-                    <ProductCard
-                        key="1"
-                        name="Tênis"
-                        imagem=""
-                        price="1"
-                        priceDiscount="2"
-                    />
+                    slice(0, num).map((product, index) => (
+                        <ProductCard
+                            key={index}
+                            name={product.name}
+                            imagem={(product.image)}
+                            price={product.price}
+                            priceDiscount={product.priceDiscount}
+                        />
+                    ))
                 )}
             </Wrapper>
         </>
