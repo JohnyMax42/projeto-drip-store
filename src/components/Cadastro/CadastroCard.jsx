@@ -17,6 +17,7 @@ export default function CadastroCard() {
     padding: 30px;
     background-color: #FFFFFF;
     border-radius: 4px;
+    padding:30px ;
  
    
 `
@@ -26,8 +27,7 @@ export default function CadastroCard() {
         margin-bottom: 22px;
         flex-flow: column wrap;
         text-align: left;
-        
-        
+        font-size: 32px;
         `
 
     const WrapperSubTitulo = styled.div`
@@ -65,24 +65,21 @@ border-radius: 8px;
     const InputBox = styled.input`
   width: 22px;
   height: 22px;
-  background-color: ${props => (props.checked ? '#FF5733' : '#4CAF50')};
   border-radius: 4px;
-  border: 2px solid ${props => (props.checked ? '#FF5733' : '#4CAF50')};
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-
+background-color: '#FF5733','#4CAF50';
+transition: background-color 0.3s ease, border-color 0.3s ease;
 `
+
 
 
     return (
 
         <Wrapper>  
-          <WrapperTitulo>
-                <h3>Criar Conta</h3>
-            </WrapperTitulo>
+         
 
-            <WrapperSubTitulo>
-                <p>Informações Pessoais</p>
-            </WrapperSubTitulo>
+         
+                <p className='Sub2'>Informações Pessoais <hr /></p>
+          
  <WrapperDados>
             <form action="post">
                
@@ -99,9 +96,9 @@ border-radius: 8px;
 
             </form> 
             </WrapperDados>
-            <WrapperTitulo>
-                <p>Informações de entrega</p>
-            </WrapperTitulo>  <WrapperDados>
+           
+                <p className='Sub2'>Informações de entrega <hr /></p>
+            <WrapperDados>
             <form action="post">
           
                 <label htmlFor="" style={{ paddingBottom: '5px' }}>Endereço *</label>
@@ -117,10 +114,7 @@ border-radius: 8px;
             </form>  
                 </WrapperDados>
 
-            <InputBox type="checkbox" />
-            <label htmlFor="" style={{ paddingBottom: '5px', }}>Quero receber por email ofertas e novidades das lojas da Digital Store. A frequência de envios pode variar de acordo com a interação do cliente.</label>
-
-            <BotaoAcessar>Criar Conta</BotaoAcessar>
+           
 
 
         </Wrapper>
