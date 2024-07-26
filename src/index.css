@@ -141,6 +141,7 @@ button:focus-visible {
   margin-bottom: 22px;
   flex-flow: column wrap;
   text-align: left;
+
 }
 
 .CadastroTitulo {
@@ -151,6 +152,8 @@ button:focus-visible {
   font-weight: 700;
   line-height: 36px;
   text-align: left;
+  margin-right: 17%;
+  margin-top: 3px;
 }
 
 .imagem-colecao {
