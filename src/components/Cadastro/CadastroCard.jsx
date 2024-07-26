@@ -6,8 +6,7 @@ import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 export default function CadastroCard() {
 
     const Wrapper = styled.div`
-    display: grid;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     width: 750px;
     height: auto;

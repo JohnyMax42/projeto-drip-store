@@ -15,7 +15,7 @@ export default function CadastroPage() {
         padding-left: 100px; `
 
     const BotaoAcessar = styled.button`
-width: 100%;
+width: 750px;
 height: 48px;
 margin-top: 20px;
 color: rgba(245, 245, 245, 1);
