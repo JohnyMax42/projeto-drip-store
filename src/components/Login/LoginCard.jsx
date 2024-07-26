@@ -145,6 +145,7 @@ export default function LoginCard() {
 
     return (
         <Wrapper>
+            <ToastContainer />
             <WrapperTitulo>
                 <h3>Acesse sua conta</h3>
                 <p>Novo cliente? Então registre-se <a href="">aqui</a></p>
@@ -152,7 +153,6 @@ export default function LoginCard() {
 
 
             <form onSubmit={handleLogin}>
-                <ToastContainer />
                 <WrapperDados>
                     <label htmlFor="emailInput" style={{ paddingBottom: '5px' }}>Email *</label>
                     <InputLogin
