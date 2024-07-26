@@ -35,55 +35,55 @@ export default function Header() {
     return (
         <div className="caixaHeader">
             <div id='caixaHeader2'>
-            <div id='cabecalho'>
-                <Link to={'/'} onClick={() => handleLinkSelection('Home')}>
-                    <img id="logo" src={logo} alt="logo" />
-                </Link>
-                <input
-                    id="barraPesquisa"
-                    type="text"
-                    placeholder="Pesquisar produto..."
-                    onKeyDown={handleKeyDown}
-                />
-                <input id="botaoLupa" type="button" value='' />
-                <Link to={'/Cadastro'} id="cadastro" className="links">Cadastre-se</Link>
-                <Link to={'/Login'}>
-                    <input id="botaoEntrar" type="button" value="Entrar" />
-                </Link>
-                <a id="iconeCarrinho" href="#carrinho">
-                    <div id='bolinhaCarrinho'>2</div>
-                </a>
-            </div>
-            <div id="linksHeader">
-                <Link
-                    to={'/'}
-                    className={`links ${selectedLink === 'Home' ? 'selected' : ''}`}
-                    onClick={() => handleLinkSelection('Home')}
-                >
-                    Home
-                </Link>
-                <Link
-                    to={'/ProductListingPage'}
-                    className={`links ${selectedLink === 'Produtos' ? 'selected' : ''}`}
-                    onClick={() => handleLinkSelection('Produtos')}
-                >
-                    Produtos
-                </Link>
-                <Link
-                    to={'/ProductViewPage'}
-                    className={`links ${selectedLink === 'Categorias' ? 'selected' : ''}`}
-                    onClick={() => handleLinkSelection('Categorias')}
-                >
-                    Categorias
-                </Link>
-                <Link
-                    to={'/ProductViewPage'}
-                    className={`links ${selectedLink === 'Pedidos' ? 'selected' : ''}`}
-                    onClick={() => handleLinkSelection('Pedidos')}
-                >
-                    Meus Pedidos
-                </Link>
-            </div>
+                <div id='cabecalho'>
+                    <Link to={'/'} onClick={() => handleLinkSelection('Home')}>
+                        <img id="logo" src={logo} alt="logo" />
+                    </Link>
+                    <input
+                        id="barraPesquisa"
+                        type="text"
+                        placeholder="Pesquisar produto..."
+                        onKeyDown={handleKeyDown}
+                    />
+                    <input id="botaoLupa" type="button" value='' />
+                    <Link to={'/Cadastro'} id="cadastro" className="links">Cadastre-se</Link>
+                    <Link to={'/Login'}>
+                        <input id="botaoEntrar" type="button" value="Entrar" />
+                    </Link>
+                    <a id="iconeCarrinho" href="#carrinho">
+                        <div id='bolinhaCarrinho'>2</div>
+                    </a>
+                </div>
+                <div id="linksHeader">
+                    <Link
+                        to={'/'}
+                        className={`links ${selectedLink === 'Home' ? 'selected' : ''}`}
+                        onClick={() => handleLinkSelection('Home')}
+                    >
+                        Home
+                    </Link>
+                    <Link
+                        to={'/ProductListingPage'}
+                        className={`links ${selectedLink === 'Produtos' ? 'selected' : ''}`}
+                        onClick={() => handleLinkSelection('Produtos')}
+                    >
+                        Produtos
+                    </Link>
+                    <Link
+                        to={'/ProductViewPage'}
+                        className={`links ${selectedLink === 'Categorias' ? 'selected' : ''}`}
+                        onClick={() => handleLinkSelection('Categorias')}
+                    >
+                        Categorias
+                    </Link>
+                    <Link
+                        to={'/ProductViewPage'}
+                        className={`links ${selectedLink === 'Pedidos' ? 'selected' : ''}`}
+                        onClick={() => handleLinkSelection('Pedidos')}
+                    >
+                        Meus Pedidos
+                    </Link>
+                </div>
             </div>
         </div>
     );
