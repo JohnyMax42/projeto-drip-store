@@ -30,7 +30,7 @@ export default function ProductListing({ num = 1 }) {
                         />
                     ))
                 ) : (
-                    slice(0, num).map((product, index) => (
+                    products.slice(0, num).map((product, index) => (
                         <ProductCard
                             key={index}
                             name={product.name}
