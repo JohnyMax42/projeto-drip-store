@@ -17,7 +17,7 @@
     align-items: flex-start;
     background-position: 272px;
     /* Alinha verticalmente */
-  
+
 }
 
 .texto {
@@ -41,7 +41,7 @@
     letter-spacing: 0.75px;
 }
 
-.p2{
+.p2 {
     font-family: Inter;
     color: rgba(71, 71, 71, 1);
     font-size: 48px;
@@ -58,7 +58,7 @@
     letter-spacing: 0.75px;
 }
 
-.butonof{
+.butonof {
     display: flex;
     font-weight: 700;
     width: 200px;
@@ -68,6 +68,8 @@
     background-color: var(--cor-primaria);
     border: 0px;
     border-radius: 8px;
-   
 }
 
+.imagens {
+    padding-right: 100px;
+}
