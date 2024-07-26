@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel'
-import Banner from "./Banner";
 // Imagens 
 import image1 from '../assets/product-view-slide.png';
 import image2 from '../assets/product-view-slide.png';
@@ -30,6 +29,29 @@ function Carrossel2() {
         ))}
 
       </Carousel>
+      <div className="basecarrossel-container">
+      <div className="imagecarrossel">
+
+        <div className="bgimage1" >
+        <img src="src/assets/product-view-slide.png" alt="First Slide" id="tamanhoimage1"/>
+        </div>
+        <div className="bgimage2" >
+        <img src="src/assets/product-view-slide.png" alt="Second Slide" id="tamanhoimage2"/>
+        </div>
+        <div className="bgimage3" >
+        <img src="src/assets/product-view-slide.png" alt="Third Slide" id="tamanhoimage3"/>
+        </div>
+        <div className="bgimage4" >
+        <img src="src/assets/product-view-slide.png" alt="Fourth Slide" id="tamanhoimage4"/>
+        </div>
+        <div className="bgimage5" >
+        <img src="src/assets/product-view-slide.png" alt="Fifth Slide" id="tamanhoimage5"/>
+        </div>
+   
+</div>
+      
+      </div>
+
     </div >
   )
 }

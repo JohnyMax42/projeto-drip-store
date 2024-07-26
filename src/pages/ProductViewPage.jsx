@@ -28,7 +28,9 @@ export default function ProductViewPage() {
 
                 <div id='boxProdutos'>
 
-                    <Carrossel2></Carrossel2>
+                  
+                   <Carrossel2></Carrossel2>
+
 
                     <div id="InfoSapato">
                         <p className='titulosapato'>Tênis Nike Revolution 6 Next Nature Masculino</p>
