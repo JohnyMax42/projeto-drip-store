@@ -3,7 +3,7 @@ import styled from "styled-components";
 import LoginCard from "../../components/Login/LoginCard";
 
 const Container = styled.div`
-        width: 1440px;
+        width: 100%;
         height: 90vh;
         background: linear-gradient(to bottom, #B5B6F2 0%, #EFEFFF 100%);
         display: flex;
