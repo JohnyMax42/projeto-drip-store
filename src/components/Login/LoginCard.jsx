@@ -4,6 +4,9 @@ import { styled } from "styled-components"
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Wrapper = styled.div`
         display: grid;
         flex-flow: column wrap;
@@ -88,21 +91,61 @@ export default function LoginCard() {
         try {
             const auth = getAuth();
             await signInWithEmailAndPassword(auth, email, senha);
-            console.log('Usuário logado com sucesso:', auth.currentUser.email);
+            // console.log('Usuário logado com sucesso:', auth.currentUser.email);
             // Redirecione ou execute outras operações após o login bem-sucedido
+            //Mensagem de sucesso
+            toast.success('Login feito com sucesso', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
         } catch (error) {
-            console.error('Erro ao fazer login:', error);
+            //Erro geral da API
+            // toast.error('Erro ao fazer login' + error, {
+            //     position: "top-center",
+            //     autoClose: 5000,
+            //     hideProgressBar: false,
+            //     closeOnClick: true,
+            //     pauseOnHover: true,
+            //     draggable: true,
+            //     progress: undefined,
+            //     theme: "light",
+            // });
             // Trate especificamente o erro de email inválido
             if (error.code === 'auth/invalid-email') {
-                alert('Endereço de email inválido. Verifique e tente novamente.');
+                toast.warning('Endereço de email inválido. Verifique e tente novamente.', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
             } else {
-                alert('Ocorreu um erro ao fazer login. Por favor, tente novamente mais tarde.');
+                toast.error('Ocorreu um erro ao fazer login. Por favor, tente novamente mais tarde.', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
             }
         }
     };
 
     return (
         <Wrapper>
+            <ToastContainer />
             <WrapperTitulo>
                 <h3>Acesse sua conta</h3>
                 <p>Novo cliente? Então registre-se <a href="">aqui</a></p>

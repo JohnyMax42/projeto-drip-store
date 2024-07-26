@@ -33,7 +33,8 @@ export default function Header() {
     };
 
     return (
-        <header className="caixaHeader">
+        <div className="caixaHeader">
+            <div id='caixaHeader2'>
             <div id='cabecalho'>
                 <Link to={'/'} onClick={() => handleLinkSelection('Home')}>
                     <img id="logo" src={logo} alt="logo" />
@@ -83,6 +84,7 @@ export default function Header() {
                     Meus Pedidos
                 </Link>
             </div>
-        </header>
+            </div>
+        </div>
     );
 }
