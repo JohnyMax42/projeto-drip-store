@@ -7,7 +7,13 @@
     background-color: rgba(31, 31, 31, 1);
     text-align: left;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#caixaSuperior{
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -30,13 +36,15 @@
 }
 
 #caixaInferior {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 75px;
 }
 
 #linhaFooter {
     background-color: rgba(255, 255, 255, 0.3);
     margin-bottom: 23px;
-    width: 1240px;
-    height: 1px;
+    min-width: 1240px;
+    width: 85%;
 }
