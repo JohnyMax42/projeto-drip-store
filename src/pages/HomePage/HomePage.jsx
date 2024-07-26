@@ -6,6 +6,7 @@ import ProductListing from "../../components/ProductListing/ProductListing"
 import Seta from "../../assets/arrow.png"
 import React from "react";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 const EmAlta = styled.div`
 display: flex;
@@ -16,7 +17,7 @@ margin-top: 123px;
 const EmAlta2 = styled.div`
 display: flex;
 min-width: 1240px;
-width: 75%;
+width: 94%;
 justify-content: space-between;
 `
 
@@ -35,7 +36,7 @@ export default function HomePage() {
             <EmAlta >
                 <EmAlta2>
                     <p className="strong">Produtos em alta</p>
-                    <p className="vertodoshomepage">Ver todos {<img src={Seta} alt='seta' />}</p>
+                    <Link to={'/ProductViewPage'}><p className="vertodoshomepage">Ver todos {<img src={Seta} alt='seta' />}</p></Link>
                 </EmAlta2>
                 <ProductListingBox> <ProductListing num={8}></ProductListing> </ProductListingBox>
             </EmAlta>
