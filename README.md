@@ -19,6 +19,10 @@ Projeto criado para mostrar o uso do react e seus componentes numa loja digital
 
 ## Começando
 
+Para a versão hospedada e funcional do projeto siga o seguinte link:
+
+https://projeto-drip-store-johny-levi-misael-nicolas.vercel.app
+
 Siga estas instruções para obter uma cópia do projeto e executá-lo em sua máquina local para desenvolvimento e testes.
 
 ### Pré-requisitos
