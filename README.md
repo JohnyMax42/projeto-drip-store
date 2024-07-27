@@ -1,6 +1,9 @@
 # projeto-drip-store-johny
 
 Projeto criado para mostrar o uso do react e seus componentes numa loja digital
+![image](https://github.com/user-attachments/assets/7cb91db6-25cd-4fcc-bae5-5b922862a545)
+![image](https://github.com/user-attachments/assets/e2d66c0f-27dc-4fa3-954e-3cd65919af61)
+![image](https://github.com/user-attachments/assets/e4a7acc9-d308-4f53-ac7f-953872eed931)
 
 ## Integrantes 
 - Misael Fernandes Costa
