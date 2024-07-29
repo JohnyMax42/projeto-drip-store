@@ -70,13 +70,19 @@
     font-size: 16px;
     font-weight: 700;
     border-radius: 4px;
-    
+    color: black;
+    background-color: white;
 }
 
-#button1.clicked{
+#buton1.selected{
+    color: white;
+    background-color: #C92071;
+}
+
+/* #button1.clicked{
 color: '#FFFFF','#4CAF50'; 
 background-color: '#FFFFF','#4CAF50';
-}
+} */
 
 .escolhacor[type="radio"]::before {
     content: "";
